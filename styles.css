@@ -549,6 +549,80 @@ body {
 }
 .value-item p { color: var(--text-muted); font-size: 0.92rem; margin: 0; }
 
+/* ---- PLAN YOUR VISIT ---- */
+.plan-section { background: var(--green-50); }
+.plan-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.plan-card {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: 32px 28px;
+  border: 1px solid var(--green-100);
+  box-shadow: var(--shadow-sm);
+}
+.plan-card.full-width { grid-column: 1 / -1; }
+.plan-card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--green-800);
+  margin-bottom: 18px;
+}
+.plan-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+  margin-bottom: 14px;
+}
+.plan-table th {
+  text-align: left;
+  color: var(--text-muted);
+  font-weight: 600;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--green-100);
+}
+.plan-table td {
+  padding: 8px 0;
+  border-bottom: 1px solid var(--green-50);
+  color: var(--text-secondary);
+}
+.plan-table tr:last-child td { border-bottom: none; }
+.plan-note {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  background: var(--green-50);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  border-left: 3px solid var(--green-400);
+}
+.plan-note strong { color: var(--green-700); }
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.tip-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+.tip-item span { font-size: 1.4rem; }
+.tip-item strong { color: var(--green-800); display: block; }
+@media (max-width: 768px) {
+  .plan-grid { grid-template-columns: 1fr; }
+  .tips-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 480px) {
+  .tips-grid { grid-template-columns: 1fr; }
+}
+
 /* ---- CONTACT ---- */
 .contact-section { background: white; }
 .contact-grid {

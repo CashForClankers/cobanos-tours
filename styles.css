@@ -548,6 +548,15 @@ body.lang-es [data-lang="es"] {
   font-weight: 500;
 }
 
+.tour-price {
+  font-size: 0.9rem;
+  color: var(--green-700);
+  background: var(--green-50);
+  border-radius: var(--radius-sm);
+  padding: 6px 12px;
+  margin-top: 4px;
+}
+.tour-price strong { color: var(--green-800); }
 .tour-card .btn {
   align-self: flex-start;
   margin-top: 4px;

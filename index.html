@@ -3,375 +3,895 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Los Cóbanos Tours — Snorkeling, Whale Watching & Nature in El Salvador</title>
-  <meta name="description" content="Explore the largest coral reef between Mexico and Costa Rica at Los Cóbanos. Expert-guided snorkeling, whale watching, shipwreck diving & forest tours on El Salvador's Pacific coast.">
+  <title>Los Cóbanos Tours | Snorkeling, Whale Watching & Local Tours with Victor</title>
+  <meta name="description" content="Book Los Cóbanos snorkeling and whale watching with Victor, a friendly local guide who speaks English and Spanish, has his own boat, and holds a whale-watching license. Cash or Bitcoin accepted.">
   <meta property="og:title" content="Los Cóbanos Tours">
-  <meta property="og:description" content="El Salvador's only coral reef. Expert-guided snorkeling, whale watching & nature tours.">
+  <meta property="og:description" content="Snorkeling, whale watching, and local nature tours in Los Cóbanos with Victor. English and Spanish. Cash or Bitcoin accepted.">
   <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0d2818">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <style>
-    .hero { background-image: linear-gradient(160deg, rgba(13,40,24,0.75) 0%, rgba(10,31,46,0.65) 50%, rgba(13,53,82,0.60) 100%), url('sunset.jpg'); }
-  </style>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">
+    <span data-lang="en">Skip to main content</span>
+    <span data-lang="es">Saltar al contenido principal</span>
+  </a>
 
-  <!-- NAV -->
-  <nav class="nav">
+  <nav class="nav" aria-label="Primary">
     <div class="nav-inner">
-      <a href="#" class="nav-logo">🐠 Los Cóbanos Tours</a>
+      <a href="#main-content" class="nav-logo">🐠 Los Cóbanos Tours</a>
       <div class="nav-links">
-        <a href="#tours">Tours</a>
-        <a href="#reef">The Reef</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#plan">Plan</a>
-        <a href="#about">About</a>
-        <a href="https://wa.me/50364441869" class="nav-cta" target="_blank" rel="noopener">📲 +503 6444 1869</a>
+        <a href="#tours">
+          <span data-lang="en">Tours</span>
+          <span data-lang="es">Tours</span>
+        </a>
+        <a href="#reef">
+          <span data-lang="en">The Reef</span>
+          <span data-lang="es">El Arrecife</span>
+        </a>
+        <a href="#wildlife">
+          <span data-lang="en">Wildlife</span>
+          <span data-lang="es">Fauna</span>
+        </a>
+        <a href="#plan">
+          <span data-lang="en">Plan</span>
+          <span data-lang="es">Planifica</span>
+        </a>
+        <a href="#victor">
+          <span data-lang="en">Victor</span>
+          <span data-lang="es">Víctor</span>
+        </a>
+      </div>
+      <div class="nav-actions">
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" class="lang-toggle is-active" data-set-lang="en" aria-pressed="true" aria-label="Switch to English">EN</button>
+          <button type="button" class="lang-toggle" data-set-lang="es" aria-pressed="false" aria-label="Cambiar a español">Español</button>
+        </div>
+        <a href="https://wa.me/50364441869" class="nav-cta" target="_blank" rel="noopener">
+          <span data-lang="en">Message Victor</span>
+          <span data-lang="es">Escribir a Víctor</span>
+        </a>
       </div>
     </div>
   </nav>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <div class="hero-badge">Largest Coral Reef Between Mexico & Costa Rica</div>
-      <h1 class="hero-title">Dive Into the<br><em>Wild Side</em> of El Salvador</h1>
-      <p class="hero-sub">Snorkeling · Whale Watching · Shipwrecks · Mangrove Forest<br>Los Cóbanos Protected Natural Area — 20,000ha Volcanic Reef Sanctuary</p>
-      <div class="hero-actions">
-        <a href="#tours" class="btn btn-primary">See Our Tours</a>
-        <a href="https://wa.me/50364441869" class="btn btn-ghost" target="_blank" rel="noopener">📲 Book a Trip</a>
-      </div>
-      <div class="hero-contact">
-        <a href="https://wa.me/50364441869" target="_blank" rel="noopener">💬 WhatsApp +503 6444 1869</a>
-        &nbsp;·&nbsp;
-        <a href="tel:+50364441869">📞 Call +503 6444 1869</a>
-      </div>
-    </div>
-    <div class="hero-scroll">↓ Scroll to explore</div>
-  </section>
-
-  <!-- STATS BAR -->
-  <div class="stats-bar">
-    <div class="stat-item">
-      <span class="stat-num">300+</span>
-      <span class="stat-label">Marine species</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-num">20,000</span>
-      <span class="stat-label">Hectare sanctuary</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-num">4</span>
-      <span class="stat-label">Sea turtle species</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-num">100%</span>
-      <span class="stat-label">Local guides</span>
-    </div>
-  </div>
-
-  <!-- TOURS -->
-  <section id="tours" class="section tours-section">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-kicker">What We Offer</div>
-        <h2 class="section-title">Our Tours</h2>
-        <p class="section-sub">Every tour is led by local guides who grew up on this reef. Small groups, big experiences.</p>
-      </div>
-      <div class="tours-grid">
-
-        <div class="tour-card featured">
-          <div class="tour-icon">🤿</div>
-          <div class="tour-tag">Most Popular</div>
-          <h3>Coral Reef Snorkel</h3>
-          <p>Float above the only living coral reef in El Salvador. Spot parrotfish, angelfish, moray eels, sea turtles, and reef sharks in the crystal-clear Pacific waters of the Los Cóbanos marine reserve.</p>
-          <ul class="tour-details">
-            <li>⏱ 3–4 hours</li>
-            <li>👥 Max 8 per group</li>
-            <li>🎯 All skill levels</li>
-            <li>🏊 Equipment included</li>
-          </ul>
-          <a href="https://wa.me/50364441869" class="btn btn-primary btn-sm" target="_blank" rel="noopener">📲 Book — +503 6444 1869</a>
+  <main id="main-content">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span data-lang="en">Pacific reef, mangrove, and whale season adventures</span>
+          <span data-lang="es">Aventuras entre arrecife, manglar y temporada de ballenas</span>
         </div>
-
-        <div class="tour-card">
-          <div class="tour-icon">🐋</div>
-          <h3>Whale Watching</h3>
-          <p>Humpback whales migrate through Los Cóbanos waters Dec–Mar to mate and give birth. Peak sightings January–February. Also spot whale sharks, spinner dolphins, bottlenose dolphins, and manta rays.</p>
-          <ul class="tour-details">
-            <li>⏱ 3–5 hours offshore</li>
-            <li>📅 Peak: Jan–Feb</li>
-            <li>🚤 Stable panga boats</li>
-            <li>🎥 Photography-friendly</li>
-          </ul>
-          <a href="https://wa.me/50364441869" class="btn btn-outline btn-sm" target="_blank" rel="noopener">📲 Book — +503 6444 1869</a>
+        <h1 id="hero-title" class="hero-title">
+          <span data-lang="en">Explore Los Cóbanos with <em>Victor</em></span>
+          <span data-lang="es">Explora Los Cóbanos con <em>Víctor</em></span>
+        </h1>
+        <p class="hero-sub" data-lang="en">Friendly local guide. English and Spanish. Own boat. Licensed whale-watching captain. Snorkeling, wildlife trips, and clear meeting-point support for first-time visitors.</p>
+        <p class="hero-sub" data-lang="es">Guía local amable. Inglés y español. Lancha propia. Capitán con licencia para avistamiento de ballenas. Snorkel, paseos de naturaleza y un punto de encuentro claro para quienes visitan por primera vez.</p>
+        <div class="hero-actions">
+          <a href="#tours" class="btn btn-primary">
+            <span data-lang="en">See Tours</span>
+            <span data-lang="es">Ver tours</span>
+          </a>
+          <a href="https://wa.me/50364441869" class="btn btn-ghost" target="_blank" rel="noopener">
+            <span data-lang="en">Book with Victor</span>
+            <span data-lang="es">Reservar con Víctor</span>
+          </a>
         </div>
-
-        <div class="tour-card">
-          <div class="tour-icon">🌿</div>
-          <h3>Mangrove Forest & Estuary</h3>
-          <p>Kayak or boat through the protected mangrove forest of the Los Cóbanos estuary. Spot herons, crocodiles, iguanas, and migratory birds in a UNESCO-protected ecosystem at the edge of the Pacific.</p>
-          <ul class="tour-details">
-            <li>⏱ 2–3 hours</li>
-            <li>🦅 Birding friendly</li>
-            <li>🛶 Kayak or lancha</li>
-            <li>🌅 Sunrise recommended</li>
-          </ul>
-          <a href="https://wa.me/50364441869" class="btn btn-outline btn-sm" target="_blank" rel="noopener">📲 Book — +503 6444 1869</a>
+        <div class="victor-hero-badge">
+          <span aria-hidden="true">👋</span>
+          <span data-lang="en">Ask for <strong>Victor</strong> if you want help in English or Spanish, sea-condition guidance, and the local meeting point.</span>
+          <span data-lang="es">Pregunta por <strong>Víctor</strong> si quieres ayuda en inglés o español, orientación según el mar y el punto de encuentro local.</span>
         </div>
-
-        <div class="tour-card">
-          <div class="tour-icon">⚓</div>
-          <h3>Shipwreck Snorkel</h3>
-          <p>Explore the <em>Sheredos</em> and <em>Douglas</em> — 19th-century shipwrecks officially designated as the first underwater archaeological sites in Central America. Coral-encrusted hulls now alive with marine life.</p>
-          <ul class="tour-details">
-            <li>⏱ 3–4 hours</li>
-            <li>🏊 Intermediate swimmers</li>
-            <li>🏺 Historical wrecks</li>
-            <li>📷 Incredible photography</li>
-          </ul>
-          <a href="https://wa.me/50364441869" class="btn btn-outline btn-sm" target="_blank" rel="noopener">📲 Book — +503 6444 1869</a>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- REEF SECTION -->
-  <section id="reef" class="section reef-section">
-    <div class="reef-bg"></div>
-    <div class="container reef-inner">
-      <div class="reef-text">
-        <div class="section-kicker">The Natural Wonder</div>
-        <h2>El Salvador's Hidden Underwater World</h2>
-        <p>Los Cóbanos is the <strong>largest coral reef between Mexico and Costa Rica</strong> — a 20,000-hectare marine sanctuary and Ramsar Wetland of International Importance. For thousands of miles in either direction, it's the only substantial hard-substrate reef habitat on the Pacific coast.</p>
-        <p>Unlike Caribbean limestone reefs, Los Cóbanos is a <strong>volcanic reef</strong> — formed over ancient lava flows, creating a rugged underwater landscape of caverns, arches, and coral gardens unique in the Americas. Below the surface: the 19th-century shipwrecks <em>Sheredos</em> and <em>Douglas</em>, the first underwater archaeological sites in Central America.</p>
-        <div class="reef-species">
-          <div class="species-tag">🐢 4 Turtle Species</div>
-          <div class="species-tag">🦈 Hammerhead Sharks</div>
-          <div class="species-tag">🐬 Spinner Dolphins</div>
-          <div class="species-tag">🐋 Humpback Whales</div>
-          <div class="species-tag">🐳 Whale Sharks</div>
-          <div class="species-tag">🦅 Manta Rays</div>
-          <div class="species-tag">🐡 300+ Fish Species</div>
-          <div class="species-tag">🐠 Giant Seahorses</div>
-          <div class="species-tag">⚓ Historic Shipwrecks</div>
-          <div class="species-tag">🌿 Mangrove Forest</div>
-          <div class="species-tag">🦜 Migratory Birds</div>
-          <div class="species-tag">🦊 Gray Foxes & Deer</div>
+        <div class="hero-contact">
+          <a href="https://wa.me/50364441869" target="_blank" rel="noopener">WhatsApp +503 6444 1869</a>
+          <span aria-hidden="true">·</span>
+          <a href="tel:+50364441869">
+            <span data-lang="en">Call Victor</span>
+            <span data-lang="es">Llamar a Víctor</span>
+          </a>
         </div>
       </div>
-      <div class="reef-image-col">
-        <div class="reef-image-placeholder">
-          <div class="reef-real-img" style="grid-column:1/-1;border-radius:14px;overflow:hidden;max-height:260px;">
-            <img src="beach.jpg" alt="Los Cóbanos volcanic reef and tide pools" style="width:100%;height:260px;object-fit:cover;display:block;">
+      <div class="hero-scroll">
+        <span data-lang="en">Scroll for tours, wildlife, and meeting details</span>
+        <span data-lang="es">Desliza para ver tours, fauna y punto de encuentro</span>
+      </div>
+    </section>
+
+    <div class="payment-strip" role="note">
+      <span data-lang="en">Pay <strong>cash</strong> or <strong>Bitcoin</strong>. Victor confirms the day, tide, and meeting point before you arrive.</span>
+      <span data-lang="es">Paga en <strong>efectivo</strong> o <strong>Bitcoin</strong>. Víctor confirma el día, la marea y el punto de encuentro antes de tu llegada.</span>
+    </div>
+
+    <div class="stats-bar" aria-label="Highlights">
+      <div class="stat-item">
+        <span class="stat-num">21,312</span>
+        <span class="stat-label">
+          <span data-lang="en">hectares in the Ramsar-listed complex</span>
+          <span data-lang="es">hectáreas del complejo Ramsar</span>
+        </span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">2</span>
+        <span class="stat-label">
+          <span data-lang="en">languages spoken by Victor</span>
+          <span data-lang="es">idiomas que habla Víctor</span>
+        </span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">1</span>
+        <span class="stat-label">
+          <span data-lang="en">boat + licensed whale-watch guide</span>
+          <span data-lang="es">lancha + guía con licencia</span>
+        </span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">Nov–Apr</span>
+        <span class="stat-label">
+          <span data-lang="en">best-known season for calmer snorkeling conditions</span>
+          <span data-lang="es">temporada más conocida para mejor snorkel</span>
+        </span>
+      </div>
+    </div>
+
+    <section id="tours" class="section tours-section" aria-labelledby="tours-title">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">
+            <span data-lang="en">What Victor Offers</span>
+            <span data-lang="es">Lo que ofrece Víctor</span>
           </div>
-          <div class="reef-real-img" style="border-radius:14px;overflow:hidden;max-height:160px;">
-            <img src="sunset.jpg" alt="Sunset at Los Cóbanos reef" style="width:100%;height:160px;object-fit:cover;display:block;">
+          <h2 id="tours-title" class="section-title">
+            <span data-lang="en">Tours that stay close to local knowledge</span>
+            <span data-lang="es">Tours guiados con conocimiento local</span>
+          </h2>
+          <p class="section-sub" data-lang="en">This is not a generic transfer service. Victor helps visitors decide what is realistic for the sea that day, where to meet, what to bring, and whether snorkeling or whale watching makes more sense.</p>
+          <p class="section-sub" data-lang="es">Esto no es un traslado genérico. Víctor ayuda a decidir qué es realista para el mar ese día, dónde encontrarse, qué llevar y si conviene más snorkel o avistamiento de ballenas.</p>
+        </div>
+        <div class="tours-grid">
+          <article class="tour-card featured">
+            <div class="tour-icon" aria-hidden="true">🤿</div>
+            <div class="tour-tag">
+              <span data-lang="en">Best for first-time visitors</span>
+              <span data-lang="es">Ideal para primera visita</span>
+            </div>
+            <h3>
+              <span data-lang="en">Reef Snorkeling</span>
+              <span data-lang="es">Snorkel en el arrecife</span>
+            </h3>
+            <p data-lang="en">Explore Los Cóbanos' shallow reef and rocky Pacific habitat with a local guide who can explain where the coral, fish, and tide pools are easiest to enjoy safely.</p>
+            <p data-lang="es">Explora el arrecife poco profundo y el fondo rocoso del Pacífico en Los Cóbanos con un guía local que explica dónde disfrutar de coral, peces y pozas de forma segura.</p>
+            <ul class="tour-details">
+              <li data-lang="en">Small-group pacing</li>
+              <li data-lang="es">Ritmo para grupos pequeños</li>
+              <li data-lang="en">Best at lower tide</li>
+              <li data-lang="es">Mejor con marea baja</li>
+              <li data-lang="en">Bring water shoes</li>
+              <li data-lang="es">Lleva zapatos de agua</li>
+              <li data-lang="en">Ask Victor for the day’s visibility</li>
+              <li data-lang="es">Pregunta a Víctor por la visibilidad del día</li>
+            </ul>
+            <a href="https://wa.me/50364441869" class="btn btn-primary btn-sm" target="_blank" rel="noopener">
+              <span data-lang="en">Ask Victor about snorkel timing</span>
+              <span data-lang="es">Preguntar a Víctor por el snorkel</span>
+            </a>
+          </article>
+
+          <article class="tour-card">
+            <div class="tour-icon" aria-hidden="true">🐋</div>
+            <h3>
+              <span data-lang="en">Whale-Watching Boat Trips</span>
+              <span data-lang="es">Salidas de avistamiento de ballenas</span>
+            </h3>
+            <p data-lang="en">Victor has his own boat and whale-watching license, so visitors looking for humpback season can coordinate directly with someone who works the local water and sea conditions.</p>
+            <p data-lang="es">Víctor tiene su propia lancha y licencia para avistamiento de ballenas, así que quienes buscan la temporada de jorobadas coordinan directamente con alguien que trabaja estas aguas.</p>
+            <ul class="tour-details">
+              <li data-lang="en">Typically marketed in dry-season months</li>
+              <li data-lang="es">Se ofrece sobre todo en meses secos</li>
+              <li data-lang="en">Sea state matters every day</li>
+              <li data-lang="es">El estado del mar cambia cada día</li>
+              <li data-lang="en">Responsible viewing distance</li>
+              <li data-lang="es">Distancia responsable de observación</li>
+              <li data-lang="en">Best confirmed directly with Victor</li>
+              <li data-lang="es">Mejor confirmarlo directo con Víctor</li>
+            </ul>
+            <a href="https://wa.me/50364441869" class="btn btn-outline btn-sm" target="_blank" rel="noopener">
+              <span data-lang="en">Check whale season with Victor</span>
+              <span data-lang="es">Confirmar temporada con Víctor</span>
+            </a>
+          </article>
+
+          <article class="tour-card">
+            <div class="tour-icon" aria-hidden="true">🌊</div>
+            <h3>
+              <span data-lang="en">Snorkel + Coastal Wildlife Day</span>
+              <span data-lang="es">Día de snorkel + fauna costera</span>
+            </h3>
+            <p data-lang="en">For travelers who want more than one stop, Victor can help combine snorkeling with tide pools, shoreline photography, and a relaxed look at wildlife around the village.</p>
+            <p data-lang="es">Para quienes quieren más de una parada, Víctor puede combinar snorkel con pozas, fotografía de costa y una visita tranquila a la fauna del pueblo.</p>
+            <ul class="tour-details">
+              <li data-lang="en">Flexible around sea conditions</li>
+              <li data-lang="es">Flexible según el mar</li>
+              <li data-lang="en">Good option for families</li>
+              <li data-lang="es">Buena opción para familias</li>
+              <li data-lang="en">Iguanas often included nearby</li>
+              <li data-lang="es">A menudo incluye iguanas cerca</li>
+              <li data-lang="en">Ask about cash or Bitcoin payment</li>
+              <li data-lang="es">Pregunta por pago en efectivo o Bitcoin</li>
+            </ul>
+            <a href="https://wa.me/50364441869" class="btn btn-outline btn-sm" target="_blank" rel="noopener">
+              <span data-lang="en">Plan a custom day with Victor</span>
+              <span data-lang="es">Planear un día con Víctor</span>
+            </a>
+          </article>
+
+          <article class="tour-card">
+            <div class="tour-icon" aria-hidden="true">🌿</div>
+            <h3>
+              <span data-lang="en">Mangrove and Village Nature Stops</span>
+              <span data-lang="es">Paradas de manglar y naturaleza local</span>
+            </h3>
+            <p data-lang="en">When offshore conditions are not ideal, Victor can still guide visitors through birdlife, shoreline habitats, and the slower side of Los Cóbanos.</p>
+            <p data-lang="es">Cuando el mar no está ideal para salir, Víctor aún puede guiar a los visitantes por aves, hábitats costeros y la parte más tranquila de Los Cóbanos.</p>
+            <ul class="tour-details">
+              <li data-lang="en">Good backup for rougher seas</li>
+              <li data-lang="es">Buena alternativa con mar movido</li>
+              <li data-lang="en">Village-scale local guiding</li>
+              <li data-lang="es">Guiado muy local</li>
+              <li data-lang="en">Easy pace for mixed groups</li>
+              <li data-lang="es">Ritmo fácil para grupos mixtos</li>
+              <li data-lang="en">Confirm route directly with Victor</li>
+              <li data-lang="es">Confirma la ruta directo con Víctor</li>
+            </ul>
+            <a href="https://wa.me/50364441869" class="btn btn-outline btn-sm" target="_blank" rel="noopener">
+              <span data-lang="en">Ask about today’s options</span>
+              <span data-lang="es">Preguntar por las opciones de hoy</span>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="reef" class="section reef-section" aria-labelledby="reef-title">
+      <div class="container reef-inner">
+        <div class="reef-text">
+          <div class="section-kicker">
+            <span data-lang="en">The Place</span>
+            <span data-lang="es">El lugar</span>
           </div>
-          <div class="reef-real-img" style="border-radius:14px;overflow:hidden;max-height:160px;">
-            <img src="sign.jpg" alt="Los Cóbanos Protected Natural Area operations center" style="width:100%;height:160px;object-fit:cover;display:block;">
+          <h2 id="reef-title">
+            <span data-lang="en">Why Los Cóbanos feels different</span>
+            <span data-lang="es">Por qué Los Cóbanos se siente distinto</span>
+          </h2>
+          <p data-lang="en">The Ramsar-listed Complejo Los Cóbanos covers <strong>21,312 hectares</strong> of coast, reef, and mangrove habitat. Official Salvadoran environmental reports describe coral-building species such as <strong>Porites lobata</strong> and <strong>Pocillopora</strong> on volcanic rock and reef structure in this zone.</p>
+          <p data-lang="es">El Complejo Los Cóbanos inscrito en Ramsar cubre <strong>21,312 hectáreas</strong> de costa, arrecife y manglar. Informes ambientales salvadoreños describen corales constructores como <strong>Porites lobata</strong> y <strong>Pocillopora</strong> sobre roca volcánica y estructura arrecifal en esta zona.</p>
+          <p data-lang="en">That means the experience is more Pacific and more rugged than a Caribbean postcard: tide pools, rock shelves, coral patches, fish around reef edges, and sea conditions that change enough that a local guide matters.</p>
+          <p data-lang="es">Eso significa que la experiencia es más pacífica y más agreste que una postal caribeña: pozas, lajas rocosas, parches de coral, peces en el borde del arrecife y condiciones del mar que cambian lo suficiente como para que importe tener un guía local.</p>
+          <div class="reef-species">
+            <span class="species-tag">🪸 <span data-lang="en">Volcanic reef structure</span><span data-lang="es">Arrecife sobre roca volcánica</span></span>
+            <span class="species-tag">🐢 <span data-lang="en">Sea turtle habitat</span><span data-lang="es">Hábitat de tortugas</span></span>
+            <span class="species-tag">⚓ <span data-lang="en">Historic wreck zone</span><span data-lang="es">Zona de naufragios históricos</span></span>
+            <span class="species-tag">🌿 <span data-lang="en">Mangrove edge nearby</span><span data-lang="es">Manglar cercano</span></span>
+            <span class="species-tag">🤿 <span data-lang="en">Best checked by tide and swell</span><span data-lang="es">Mejor revisar marea y oleaje</span></span>
+          </div>
+        </div>
+        <div class="reef-image-col">
+          <div class="reef-image-grid">
+            <figure class="image-card image-card-wide">
+              <img src="beach.jpg" alt="Los Cóbanos shoreline with rocky reef pools">
+            </figure>
+            <figure class="image-card">
+              <img src="sunset.jpg" alt="Sunset over Los Cóbanos on the Pacific coast">
+            </figure>
+            <figure class="image-card">
+              <img src="sign.jpg" alt="Sign for the protected natural area at Los Cóbanos">
+            </figure>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- GALLERY -->
-  <section id="gallery" class="section gallery-section">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-kicker">Gallery</div>
-        <h2 class="section-title">See the Magic</h2>
-        <p class="section-sub">Photos from our tours — more arriving soon.</p>
-      </div>
-      <div class="gallery-grid" id="gallery-grid">
-        <div class="gallery-item"><img src="beach.jpg" alt="Los Cóbanos volcanic reef and tide pools — Área Natural Protegida"></div>
-        <div class="gallery-item"><img src="sunset.jpg" alt="Pacific sunset at Los Cóbanos reef with swimmers silhouetted"></div>
-        <div class="gallery-item"><img src="sign.jpg" alt="Bienvenidos — Centro de Operaciones, Área Natural Protegida Complejo Los Cóbanos"></div>
-        <div class="gallery-item placeholder"><span>🤿</span><p>Snorkeling tour — photo coming soon</p></div>
-        <div class="gallery-item placeholder"><span>🐋</span><p>Whale watching — photo coming soon</p></div>
-        <div class="gallery-item placeholder"><span>🌿</span><p>Mangrove forest — photo coming soon</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about" class="section about-section">
-    <div class="container about-inner">
-      <div class="about-image-col">
-        <div class="about-img-wrap">
-          <img src="sign.jpg" alt="Los Cóbanos Protected Natural Area operations center" style="width:100%;height:400px;object-fit:cover;border-radius:14px;display:block;">
+    <section id="victor" class="section victor-section" aria-labelledby="victor-title">
+      <div class="container victor-inner">
+        <div class="victor-card">
+          <div class="victor-avatar" aria-hidden="true">🧑‍✈️</div>
+          <div class="victor-name">Victor</div>
+          <div class="victor-title">
+            <span data-lang="en">Friendly local guide</span>
+            <span data-lang="es">Guía local amable</span>
+          </div>
+          <div class="victor-tags">
+            <span class="victor-tag">🇺🇸 English</span>
+            <span class="victor-tag">🇸🇻 Español</span>
+            <span class="victor-tag">
+              <span data-lang="en">🚤 Own boat</span>
+              <span data-lang="es">🚤 Lancha propia</span>
+            </span>
+            <span class="victor-tag">
+              <span data-lang="en">🐋 Whale license</span>
+              <span data-lang="es">🐋 Licencia ballenas</span>
+            </span>
+          </div>
+          <div class="victor-cta">
+            <a href="https://wa.me/50364441869" class="btn btn-primary" target="_blank" rel="noopener">
+              <span data-lang="en">WhatsApp Victor</span>
+              <span data-lang="es">WhatsApp Víctor</span>
+            </a>
+            <a href="tel:+50364441869" class="btn btn-ghost">
+              <span data-lang="en">Call +503 6444 1869</span>
+              <span data-lang="es">Llamar +503 6444 1869</span>
+            </a>
+          </div>
+        </div>
+        <div class="victor-info">
+          <div class="section-kicker">
+            <span data-lang="en">Why Contact Victor</span>
+            <span data-lang="es">Por qué contactar a Víctor</span>
+          </div>
+          <h2 id="victor-title">
+            <span data-lang="en">Victor is the clearest starting point for visitors</span>
+            <span data-lang="es">Víctor es el mejor punto de partida para visitantes</span>
+          </h2>
+          <p data-lang="en">If you are visiting from the United States or another English-speaking market, Victor is the person to contact first. He speaks English and Spanish, helps explain what conditions are realistic that day, and gives a straightforward local meeting point instead of leaving visitors to guess.</p>
+          <p data-lang="es">Si vienes de Estados Unidos u otro mercado angloparlante, Víctor es la primera persona a quien conviene escribir. Habla inglés y español, explica qué condiciones son realistas ese día y da un punto de encuentro local claro para que nadie llegue adivinando.</p>
+          <p data-lang="en">He also has his own boat and a whale-watching license, which makes him especially useful for travelers comparing snorkeling plans with offshore wildlife trips.</p>
+          <p data-lang="es">También tiene su propia lancha y licencia de avistamiento de ballenas, lo que lo vuelve especialmente útil para quienes comparan planes de snorkel con salidas mar adentro.</p>
+          <p data-lang="en">One extra local detail: visitors often notice the <strong>big iguanas</strong> around Victor’s parking lot and nearby trees before the tour even starts.</p>
+          <p data-lang="es">Un detalle local extra: antes de que empiece el tour, muchos visitantes notan las <strong>iguanas grandes</strong> alrededor del estacionamiento de Víctor y los árboles cercanos.</p>
         </div>
       </div>
-      <div class="about-text">
-        <div class="section-kicker">About Us</div>
-        <h2>Local Guides, Real Knowledge</h2>
-        <p>We are a team of local fishermen, marine conservationists, and coastal community members who have called Los Cóbanos home for generations. We started guiding tours to share this extraordinary place — and to fund its protection.</p>
-        <p>Every tour contributes directly to the <strong>Tortuguero cooperative</strong> and local reef conservation efforts. When you book with us, you're supporting the community that protects this reef year-round.</p>
-        <div class="about-values">
-          <div class="value-item">
-            <span class="value-icon">🌍</span>
-            <div>
-              <strong>Conservation-First</strong>
-              <p>We follow strict no-touch, low-impact reef protocols on every tour.</p>
+    </section>
+
+    <!-- Source-backed wildlife notes are documented in docs/content-sources.md. -->
+    <section id="wildlife" class="section education-section" aria-labelledby="wildlife-title">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">
+            <span data-lang="en">Learn Before You Go</span>
+            <span data-lang="es">Aprende antes de ir</span>
+          </div>
+          <h2 id="wildlife-title" class="section-title">
+            <span data-lang="en">Snorkeling and whale-watching notes for Los Cóbanos</span>
+            <span data-lang="es">Notas de snorkel y avistamiento para Los Cóbanos</span>
+          </h2>
+          <p class="section-sub" data-lang="en">Useful expectations for reef life, seasonality, and what to look for around the village and shoreline.</p>
+          <p class="section-sub" data-lang="es">Expectativas útiles sobre vida arrecifal, temporada y qué mirar en el pueblo y la costa.</p>
+        </div>
+
+        <div class="edu-grid">
+          <article class="edu-card">
+            <div class="edu-card-icon" aria-hidden="true">🪸</div>
+            <h3>
+              <span data-lang="en">How snorkeling usually works here</span>
+              <span data-lang="es">Cómo suele funcionar el snorkel aquí</span>
+            </h3>
+            <p data-lang="en">The popular travel guidance for Los Cóbanos points visitors to lower tide, biodegradable sunscreen, and water shoes because the reef zone mixes coral, volcanic rock, sea urchins, and shallow entry points. Victor can tell you if the day is actually worth entering.</p>
+            <p data-lang="es">Las guías de viaje más útiles para Los Cóbanos recomiendan marea baja, protector biodegradable y zapatos de agua porque la zona mezcla coral, roca volcánica, erizos y entradas poco profundas. Víctor puede decirte si ese día realmente vale la pena entrar.</p>
+            <div class="edu-chips">
+              <span class="edu-chip">Low tide</span>
+              <span class="edu-chip">Water shoes</span>
+              <span class="edu-chip">Biodegradable sunscreen</span>
+            </div>
+          </article>
+
+          <article class="edu-card">
+            <div class="edu-card-icon" aria-hidden="true">🐠</div>
+            <h3>
+              <span data-lang="en">Fish and reef life to watch for</span>
+              <span data-lang="es">Peces y vida arrecifal para buscar</span>
+            </h3>
+            <p data-lang="en">Salvadoran environmental reporting for Los Cóbanos explicitly mentions reef-building corals such as <em>Porites lobata</em> and fish including parrotfish (<em>Scarus perrico</em>), red grouper (<em>Paranthias colonus</em>), and Moorish idol (<em>Zanclus cornutus</em>). Travel references for casual snorkeling also highlight tropical fish, sea stars, and urchins close to shore.</p>
+            <p data-lang="es">Los reportes ambientales salvadoreños sobre Los Cóbanos mencionan de forma explícita corales constructores como <em>Porites lobata</em> y peces como el pez lora (<em>Scarus perrico</em>), el mero rojo (<em>Paranthias colonus</em>) y el ídolo moro (<em>Zanclus cornutus</em>). Las referencias de viaje para snorkel casual también destacan peces tropicales, estrellas de mar y erizos cerca de la orilla.</p>
+            <div class="edu-chips">
+              <span class="edu-chip">Porites lobata</span>
+              <span class="edu-chip">Scarus perrico</span>
+              <span class="edu-chip">Paranthias colonus</span>
+              <span class="edu-chip">Zanclus cornutus</span>
+            </div>
+          </article>
+
+          <article class="edu-card">
+            <div class="edu-card-icon" aria-hidden="true">🐋</div>
+            <h3>
+              <span data-lang="en">What to expect in whale season</span>
+              <span data-lang="es">Qué esperar en temporada de ballenas</span>
+            </h3>
+            <p data-lang="en">Official and conservation-focused references connect Los Cóbanos with humpback whale sightings in the dry season, while responsible whale-watching work in El Salvador also highlights dolphins in the area. Offshore wildlife is never guaranteed, so the smart move is to ask Victor whether conditions justify a boat departure that day.</p>
+            <p data-lang="es">Fuentes oficiales y de conservación relacionan Los Cóbanos con avistamientos de ballena jorobada en la época seca, mientras que el trabajo de avistamiento responsable en El Salvador también destaca delfines en la zona. La fauna mar adentro nunca está garantizada, así que lo sensato es preguntarle a Víctor si ese día el mar justifica salir.</p>
+            <div class="edu-chips">
+              <span class="edu-chip">Humpback whales</span>
+              <span class="edu-chip">Dry season</span>
+              <span class="edu-chip">Responsible distance</span>
+            </div>
+          </article>
+
+          <article class="edu-card iguana-card">
+            <div class="edu-card-icon" aria-hidden="true">🦎</div>
+            <h3>
+              <span data-lang="en">Big iguanas near the meeting point</span>
+              <span data-lang="es">Iguanas grandes cerca del punto de encuentro</span>
+            </h3>
+            <p data-lang="en">One of the simplest local surprises is how many large iguanas visitors notice around Victor’s parking lot and the nearby trees. It is an easy photo stop before or after the boat. Watch respectfully and do not feed wildlife unless Victor tells you a local practice is appropriate.</p>
+            <p data-lang="es">Una de las sorpresas más sencillas del lugar es cuántas iguanas grandes se ven alrededor del estacionamiento de Víctor y los árboles cercanos. Es una parada fácil para fotos antes o después de la lancha. Obsérvalas con respeto y no alimentes fauna silvestre a menos que Víctor te indique que es apropiado.</p>
+            <div class="edu-chips">
+              <span class="edu-chip">Meeting-point wildlife</span>
+              <span class="edu-chip">Easy photo stop</span>
+              <span class="edu-chip">No feeding</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="edu-resources" aria-label="Reference links">
+          <a class="edu-resource-link" href="https://www.inaturalist.org/observations?lat=13.5254549&amp;lng=-89.8061826&amp;radius=8&amp;subview=map" target="_blank" rel="noopener">
+            <span data-lang="en">iNaturalist wildlife map</span>
+            <span data-lang="es">Mapa de fauna en iNaturalist</span>
+          </a>
+          <a class="edu-resource-link" href="https://www.inaturalist.org/observations?lat=13.5254549&amp;lng=-89.8061826&amp;radius=8&amp;iconic_taxa=Actinopterygii&amp;subview=map" target="_blank" rel="noopener">
+            <span data-lang="en">iNaturalist reef fish view</span>
+            <span data-lang="es">Vista de peces arrecifales</span>
+          </a>
+          <a class="edu-resource-link" href="https://www.inaturalist.org/observations?lat=13.5254549&amp;lng=-89.8061826&amp;radius=3&amp;iconic_taxa=Reptilia&amp;subview=map" target="_blank" rel="noopener">
+            <span data-lang="en">iNaturalist reptile view</span>
+            <span data-lang="es">Vista de reptiles</span>
+          </a>
+          <a class="edu-resource-link" href="https://rsis.ramsar.org/es/ris/2419" target="_blank" rel="noopener">
+            <span data-lang="en">Ramsar site record</span>
+            <span data-lang="es">Ficha Ramsar</span>
+          </a>
+          <a class="edu-resource-link" href="https://www.visitelsalvador.ai/blog/plongee-snorkeling-salvador-guide-complet?lang=es" target="_blank" rel="noopener">
+            <span data-lang="en">Visit El Salvador guide</span>
+            <span data-lang="es">Guía Visit El Salvador</span>
+          </a>
+          <a class="edu-resource-link" href="https://www.marn.gob.sv/marn-lanza-proyecto-viva-ballena/" target="_blank" rel="noopener">
+            <span data-lang="en">MARN whale project</span>
+            <span data-lang="es">Proyecto ballena MARN</span>
+          </a>
+        </div>
+        <p class="sources-note">
+          <span data-lang="en">Wildlife and seasonality notes are summarized in <a href="docs/content-sources.md">docs/content-sources.md</a>.</span>
+          <span data-lang="es">Las notas sobre fauna y temporada están resumidas en <a href="docs/content-sources.md">docs/content-sources.md</a>.</span>
+        </p>
+      </div>
+    </section>
+
+    <section id="gallery" class="section gallery-section" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">
+            <span data-lang="en">The Place in View</span>
+            <span data-lang="es">El lugar a la vista</span>
+          </div>
+          <h2 id="gallery-title" class="section-title">
+            <span data-lang="en">A quick visual feel for Los Cóbanos</span>
+            <span data-lang="es">Una vista rápida de Los Cóbanos</span>
+          </h2>
+          <p class="section-sub" data-lang="en">The current site photography keeps the focus on the shoreline, sunset, and protected-area context.</p>
+          <p class="section-sub" data-lang="es">La fotografía actual mantiene el foco en la costa, el atardecer y el contexto del área protegida.</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item"><img src="beach.jpg" alt="Rocky shoreline and reef flats at Los Cóbanos"></div>
+          <div class="gallery-item"><img src="sunset.jpg" alt="Sunset at Los Cóbanos with bathers in silhouette"></div>
+          <div class="gallery-item"><img src="sign.jpg" alt="Protected-area sign at Los Cóbanos"></div>
+          <div class="gallery-item placeholder">
+            <span aria-hidden="true">🤿</span>
+            <p data-lang="en">Snorkeling photos can be added later without changing this layout.</p>
+            <p data-lang="es">Las fotos de snorkel pueden añadirse después sin cambiar este diseño.</p>
+          </div>
+          <div class="gallery-item placeholder">
+            <span aria-hidden="true">🐋</span>
+            <p data-lang="en">Whale-watching photos can be added later.</p>
+            <p data-lang="es">Las fotos de ballenas pueden añadirse después.</p>
+          </div>
+          <div class="gallery-item placeholder">
+            <span aria-hidden="true">🦎</span>
+            <p data-lang="en">Iguana photos can be added later.</p>
+            <p data-lang="es">Las fotos de iguanas pueden añadirse después.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="plan" class="section plan-section" aria-labelledby="plan-title">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">
+            <span data-lang="en">Practical Planning</span>
+            <span data-lang="es">Plan práctico</span>
+          </div>
+          <h2 id="plan-title" class="section-title">
+            <span data-lang="en">How to plan a smooth visit</span>
+            <span data-lang="es">Cómo planear una visita fluida</span>
+          </h2>
+          <p class="section-sub" data-lang="en">The simplest visitor flow is to message Victor first, then arrive at the confirmed meeting point with the right gear and payment method.</p>
+          <p class="section-sub" data-lang="es">El flujo más sencillo es escribirle primero a Víctor, luego llegar al punto confirmado con el equipo y forma de pago correctos.</p>
+        </div>
+
+        <div class="plan-grid">
+          <article class="plan-card">
+            <h3>
+              <span data-lang="en">Best-known timing</span>
+              <span data-lang="es">Temporadas más conocidas</span>
+            </h3>
+            <table class="plan-table">
+              <thead>
+                <tr>
+                  <th data-lang="en">Activity</th>
+                  <th data-lang="en">General window</th>
+                  <th data-lang="es">Actividad</th>
+                  <th data-lang="es">Ventana general</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <span data-lang="en">Snorkeling</span>
+                    <span data-lang="es">Snorkel</span>
+                  </td>
+                  <td>
+                    <span data-lang="en">Possible year-round; clearest guidance often points to Nov–Apr</span>
+                    <span data-lang="es">Posible todo el año; muchas guías señalan Nov–Abr</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span data-lang="en">Whale watching</span>
+                    <span data-lang="es">Avistamiento de ballenas</span>
+                  </td>
+                  <td>
+                    <span data-lang="en">Dry-season trips are the usual focus; confirm directly with Victor</span>
+                    <span data-lang="es">Las salidas en época seca son las más comunes; confirma con Víctor</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span data-lang="en">Iguanas / shoreline wildlife</span>
+                    <span data-lang="es">Iguanas / fauna costera</span>
+                  </td>
+                  <td>
+                    <span data-lang="en">Easy to enjoy around the meeting area and village edge</span>
+                    <span data-lang="es">Fáciles de ver en el punto de encuentro y borde del pueblo</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="plan-note" data-lang="en">Lower tide usually makes entry and visibility easier for casual snorkelers, but daily sea state still matters.</p>
+            <p class="plan-note" data-lang="es">La marea baja suele facilitar la entrada y la visibilidad para el snorkel casual, pero el estado del mar sigue importando cada día.</p>
+          </article>
+
+          <article class="plan-card">
+            <h3>
+              <span data-lang="en">Booking and payment flow</span>
+              <span data-lang="es">Reserva y pago</span>
+            </h3>
+            <ol class="plan-steps">
+              <li>
+                <span data-lang="en"><strong>Message Victor first.</strong> Ask about sea conditions, tide, and whether snorkeling or whale watching is the better fit.</span>
+                <span data-lang="es"><strong>Escríbele primero a Víctor.</strong> Pregunta por el mar, la marea y si conviene más snorkel o ballenas.</span>
+              </li>
+              <li>
+                <span data-lang="en"><strong>Confirm the meeting point.</strong> Victor uses his local parking lot as a simple meeting marker for arrivals.</span>
+                <span data-lang="es"><strong>Confirma el punto de encuentro.</strong> Víctor usa su estacionamiento local como referencia sencilla para llegadas.</span>
+              </li>
+              <li>
+                <span data-lang="en"><strong>Pay cash or Bitcoin.</strong> No card machine is needed.</span>
+                <span data-lang="es"><strong>Paga en efectivo o Bitcoin.</strong> No hace falta datáfono.</span>
+              </li>
+            </ol>
+            <p class="plan-note" data-lang="en">If you are traveling from San Salvador, it is worth confirming the morning plan before you leave.</p>
+            <p class="plan-note" data-lang="es">Si viajas desde San Salvador, vale la pena confirmar el plan de la mañana antes de salir.</p>
+          </article>
+
+          <article class="plan-card full-width">
+            <h3>
+              <span data-lang="en">What to bring</span>
+              <span data-lang="es">Qué llevar</span>
+            </h3>
+            <div class="tips-grid">
+              <div class="tip-item">
+                <span aria-hidden="true">👟</span>
+                <strong data-lang="en">Water shoes</strong>
+                <strong data-lang="es">Zapatos de agua</strong>
+                <span data-lang="en">Useful for rocky, volcanic shoreline entries.</span>
+                <span data-lang="es">Útiles para entradas rocosas y volcánicas.</span>
+              </div>
+              <div class="tip-item">
+                <span aria-hidden="true">🧴</span>
+                <strong data-lang="en">Biodegradable sunscreen</strong>
+                <strong data-lang="es">Protector biodegradable</strong>
+                <span data-lang="en">Better for reef etiquette and local guidance.</span>
+                <span data-lang="es">Mejor para el arrecife y la guía local.</span>
+              </div>
+              <div class="tip-item">
+                <span aria-hidden="true">📱</span>
+                <strong data-lang="en">WhatsApp ready</strong>
+                <strong data-lang="es">WhatsApp listo</strong>
+                <span data-lang="en">The easiest way to coordinate with Victor.</span>
+                <span data-lang="es">La forma más fácil de coordinar con Víctor.</span>
+              </div>
+              <div class="tip-item">
+                <span aria-hidden="true">💵</span>
+                <strong data-lang="en">Cash or Bitcoin</strong>
+                <strong data-lang="es">Efectivo o Bitcoin</strong>
+                <span data-lang="en">Accepted on-site without card infrastructure.</span>
+                <span data-lang="es">Aceptados en sitio sin tarjetas.</span>
+              </div>
+              <div class="tip-item">
+                <span aria-hidden="true">🦎</span>
+                <strong data-lang="en">Camera for iguanas</strong>
+                <strong data-lang="es">Cámara para las iguanas</strong>
+                <span data-lang="en">They can be part of the arrival experience.</span>
+                <span data-lang="es">Pueden ser parte de la llegada.</span>
+              </div>
+              <div class="tip-item">
+                <span aria-hidden="true">🌊</span>
+                <strong data-lang="en">Flexible expectations</strong>
+                <strong data-lang="es">Expectativas flexibles</strong>
+                <span data-lang="en">The sea decides a lot here, so local guidance matters.</span>
+                <span data-lang="es">El mar manda mucho aquí, por eso importa la guía local.</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="map" class="section map-section" aria-labelledby="map-title">
+      <div class="container">
+        <div class="map-inner">
+          <div class="map-info">
+            <div class="section-kicker">
+              <span data-lang="en">Meeting Point</span>
+              <span data-lang="es">Punto de encuentro</span>
+            </div>
+            <h2 id="map-title">
+              <span data-lang="en">Victor’s parking lot and local meeting marker</span>
+              <span data-lang="es">Estacionamiento de Víctor y referencia local</span>
+            </h2>
+            <div class="map-detail">
+              <span class="map-detail-icon" aria-hidden="true">📍</span>
+              <div>
+                <strong data-lang="en">Address and coordinates</strong>
+                <strong data-lang="es">Dirección y coordenadas</strong>
+                <span data-lang="en">Los Cóbanos, Acajutla, Sonsonate, El Salvador<br>13.5254549, -89.8061826</span>
+                <span data-lang="es">Los Cóbanos, Acajutla, Sonsonate, El Salvador<br>13.5254549, -89.8061826</span>
+              </div>
+            </div>
+            <div class="map-detail">
+              <span class="map-detail-icon" aria-hidden="true">🚗</span>
+              <div>
+                <strong data-lang="en">How to use this point</strong>
+                <strong data-lang="es">Cómo usar este punto</strong>
+                <span data-lang="en">Treat it as Victor’s parking lot and the easiest local reference for arrivals. Message him before you drive in so he can confirm the exact handoff.</span>
+                <span data-lang="es">Tómalo como el estacionamiento de Víctor y la referencia local más simple para llegar. Escríbele antes de entrar para que confirme la entrega exacta.</span>
+              </div>
+            </div>
+            <div class="map-detail">
+              <span class="map-detail-icon" aria-hidden="true">🦎</span>
+              <div>
+                <strong data-lang="en">What you may notice there</strong>
+                <strong data-lang="es">Qué puedes notar allí</strong>
+                <span data-lang="en">Large iguanas are often part of the welcome around the trees and lot edge.</span>
+                <span data-lang="es">Las iguanas grandes suelen ser parte de la bienvenida entre los árboles y el borde del estacionamiento.</span>
+              </div>
+            </div>
+            <div class="map-actions">
+              <a href="https://wa.me/50364441869" class="btn btn-primary" target="_blank" rel="noopener">
+                <span data-lang="en">Confirm with Victor</span>
+                <span data-lang="es">Confirmar con Víctor</span>
+              </a>
+              <a href="https://www.openstreetmap.org/?mlat=13.5254549&amp;mlon=-89.8061826#map=16/13.52545/-89.80618" class="btn btn-outline" target="_blank" rel="noopener">
+                <span data-lang="en">Open map</span>
+                <span data-lang="es">Abrir mapa</span>
+              </a>
             </div>
           </div>
-          <div class="value-item">
-            <span class="value-icon">🤝</span>
-            <div>
-              <strong>Community-Owned</strong>
-              <p>100% locally operated. Revenue stays in Los Cóbanos.</p>
+          <div class="map-frame">
+            <iframe
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-89.846%2C13.505%2C-89.766%2C13.545&amp;layer=mapnik&amp;marker=13.5254549%2C-89.8061826"
+              title="Victor parking lot and Los Cóbanos meeting point"
+              loading="lazy"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about-section" aria-labelledby="about-title">
+      <div class="container about-inner">
+        <div class="about-image-col">
+          <div class="about-img-wrap">
+            <img src="sign.jpg" alt="Protected natural area sign in Los Cóbanos">
+          </div>
+        </div>
+        <div class="about-text">
+          <div class="section-kicker">
+            <span data-lang="en">About the Operation</span>
+            <span data-lang="es">Sobre la operación</span>
+          </div>
+          <h2 id="about-title">
+            <span data-lang="en">Local guiding, not a mass-tour product</span>
+            <span data-lang="es">Guianza local, no turismo masivo</span>
+          </h2>
+          <p data-lang="en">The tone of this site is intentionally simple because the value is local coordination: knowing whom to contact, where to arrive, and how to match the day’s plan with the sea. Victor is the main point of contact because he can solve all three.</p>
+          <p data-lang="es">El tono de este sitio es simple a propósito porque el valor está en la coordinación local: saber a quién escribir, dónde llegar y cómo ajustar el plan del día al mar. Víctor es el contacto principal porque puede resolver las tres cosas.</p>
+          <p data-lang="en">That also makes the bilingual experience better. English-speaking travelers do not need to guess. Spanish-speaking travelers get the same direct route.</p>
+          <p data-lang="es">Eso también mejora la experiencia bilingüe. Los viajeros angloparlantes no tienen que adivinar. Los hispanohablantes reciben la misma ruta directa.</p>
+          <div class="about-values">
+            <div class="value-item">
+              <span class="value-icon" aria-hidden="true">🤝</span>
+              <div>
+                <strong data-lang="en">Direct contact</strong>
+                <strong data-lang="es">Contacto directo</strong>
+                <p data-lang="en">Victor handles the visitor conversation himself.</p>
+                <p data-lang="es">Víctor maneja la conversación con el visitante.</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <span class="value-icon" aria-hidden="true">🌍</span>
+              <div>
+                <strong data-lang="en">Low-impact expectations</strong>
+                <strong data-lang="es">Expectativas de bajo impacto</strong>
+                <p data-lang="en">Reef etiquette and wildlife respect stay central.</p>
+                <p data-lang="es">La etiqueta del arrecife y el respeto por la fauna siguen siendo centrales.</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <span class="value-icon" aria-hidden="true">⚡</span>
+              <div>
+                <strong data-lang="en">Simple payment</strong>
+                <strong data-lang="es">Pago simple</strong>
+                <p data-lang="en">Cash or Bitcoin keeps arrivals simple.</p>
+                <p data-lang="es">Efectivo o Bitcoin simplifica la llegada.</p>
+              </div>
             </div>
           </div>
-          <div class="value-item">
-            <span class="value-icon">⚡</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">
+            <span data-lang="en">Book the Main Flow</span>
+            <span data-lang="es">Reserva el flujo principal</span>
+          </div>
+          <h2 id="contact-title" class="section-title">
+            <span data-lang="en">Message Victor, confirm the point, then go</span>
+            <span data-lang="es">Escribe a Víctor, confirma el punto y listo</span>
+          </h2>
+          <p class="section-sub" data-lang="en">For most visitors, the primary UX should be simple: contact Victor on WhatsApp, get the day’s recommendation, and head to the meeting point with cash or Bitcoin.</p>
+          <p class="section-sub" data-lang="es">Para la mayoría de visitantes, la experiencia principal debe ser simple: escribir a Víctor por WhatsApp, recibir la recomendación del día y llegar al punto con efectivo o Bitcoin.</p>
+        </div>
+        <div class="contact-grid">
+          <a class="contact-card whatsapp" href="https://wa.me/50364441869" target="_blank" rel="noopener">
+            <div class="contact-icon" aria-hidden="true">💬</div>
             <div>
-              <strong>Bitcoin Accepted</strong>
-              <p>We accept Lightning Network payments. Ask us how.</p>
+              <strong data-lang="en">WhatsApp Victor</strong>
+              <strong data-lang="es">WhatsApp Víctor</strong>
+              <p data-lang="en">Fastest booking channel. English and Spanish.</p>
+              <p data-lang="es">La vía más rápida para reservar. Inglés y español.</p>
+            </div>
+          </a>
+          <a class="contact-card" href="tel:+50364441869">
+            <div class="contact-icon" aria-hidden="true">📞</div>
+            <div>
+              <strong data-lang="en">Call Victor</strong>
+              <strong data-lang="es">Llamar a Víctor</strong>
+              <p>+503 6444 1869</p>
+            </div>
+          </a>
+          <a class="contact-card" href="#map">
+            <div class="contact-icon" aria-hidden="true">📍</div>
+            <div>
+              <strong data-lang="en">Meeting point</strong>
+              <strong data-lang="es">Punto de encuentro</strong>
+              <p data-lang="en">Victor’s parking lot marker in Los Cóbanos, Acajutla, Sonsonate at 13.5254549, -89.8061826.</p>
+              <p data-lang="es">Referencia del estacionamiento de Víctor en Los Cóbanos, Acajutla, Sonsonate: 13.5254549, -89.8061826.</p>
+            </div>
+          </a>
+          <div class="contact-card">
+            <div class="contact-icon" aria-hidden="true">💵</div>
+            <div>
+              <strong data-lang="en">Payment</strong>
+              <strong data-lang="es">Pago</strong>
+              <p data-lang="en">Cash or Bitcoin accepted.</p>
+              <p data-lang="es">Se acepta efectivo o Bitcoin.</p>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PLAN YOUR VISIT -->
-  <section id="plan" class="section plan-section">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-kicker">Practical Info</div>
-        <h2 class="section-title">Plan Your Visit</h2>
-        <p class="section-sub">When to come, what to expect, and what things cost.</p>
-      </div>
-      <div class="plan-grid">
-
-        <div class="plan-card">
-          <h3>🗓 Best Season by Activity</h3>
-          <table class="plan-table">
-            <thead><tr><th>Activity</th><th>Best Time</th></tr></thead>
-            <tbody>
-              <tr><td>🐋 Whale Watching</td><td>Nov–Mar (peak Jan–Feb)</td></tr>
-              <tr><td>🤿 Snorkeling & Diving</td><td>Year-round; best Nov–Apr</td></tr>
-              <tr><td>🌿 Forest & Mangrove</td><td>Nov–Apr (dry season)</td></tr>
-              <tr><td>🐢 Sea Turtle Nesting</td><td>Jul–Dec (Olive Ridley peak)</td></tr>
-            </tbody>
-          </table>
-          <p class="plan-note">Snorkel at <strong>Playa El Amor</strong> or <strong>La Privada</strong> during low tide for best visibility.</p>
-        </div>
-
-        <div class="plan-card">
-          <h3>💵 Tour Prices (2026)</h3>
-          <table class="plan-table">
-            <thead><tr><th>Tour</th><th>Price (USD)</th></tr></thead>
-            <tbody>
-              <tr><td>🤿 Snorkeling (3 hrs, gear incl.)</td><td>$15–$25</td></tr>
-              <tr><td>🐋 Whale Watching (3–5 hrs)</td><td>$55–$60</td></tr>
-              <tr><td>🐬 Whale + Snorkel Combo</td><td>$50–$65</td></tr>
-              <tr><td>🌿 Forest / Mangrove Walk</td><td>$10–$20</td></tr>
-              <tr><td>🌍 Full-Day Ecotour</td><td>$95–$120</td></tr>
-            </tbody>
-          </table>
-          <p class="plan-note">Book 48 hours in advance. Best rates when booking direct with local cooperatives.</p>
-        </div>
-
-        <div class="plan-card full-width">
-          <h3>📋 What to Know Before You Go</h3>
-          <div class="tips-grid">
-            <div class="tip-item"><span>🧴</span><strong>Biodegradable sunscreen only</strong> — required to protect the coral. We sell it on-site.</div>
-            <div class="tip-item"><span>👟</span><strong>Water shoes</strong> — the volcanic reef is sharp and rocky. Essential for getting in and out.</div>
-            <div class="tip-item"><span>🌊</span><strong>Snorkel at low tide</strong> — best visibility at Playa El Amor and La Privada.</div>
-            <div class="tip-item"><span>📅</span><strong>Book 48 hrs ahead</strong> — especially during Semana Santa and peak whale season (Jan–Feb).</div>
-            <div class="tip-item"><span>🏖</span><strong>Golden sand</strong> — the beach is made of crushed coral and shells, not the volcanic black sand typical of El Salvador.</div>
-            <div class="tip-item"><span>⛺</span><strong>Nearby:</strong> El Imposible National Park (1.5 hrs inland) for intensive forest hiking after your reef day.</div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="section contact-section">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-kicker">Book a Tour</div>
-        <h2 class="section-title">Ready to Explore?</h2>
-        <p class="section-sub">Reach us on WhatsApp for the fastest response. We'll confirm your tour within a few hours.</p>
-      </div>
-      <div class="contact-grid">
-        <a class="contact-card whatsapp" href="https://wa.me/50364441869" target="_blank" rel="noopener">
-          <div class="contact-icon">💬</div>
-          <div>
-            <strong>WhatsApp</strong>
-            <p>+503 6444 1869 — fastest way to book.</p>
-          </div>
-        </a>
-        <a class="contact-card phone" href="tel:+50364441869">
-          <div class="contact-icon">📞</div>
-          <div>
-            <strong>Call or Text</strong>
-            <p>+503 6444 1869</p>
-          </div>
-        </a>
-        <div class="contact-card location">
-          <div class="contact-icon">📍</div>
-          <div>
-            <strong>Location</strong>
-            <p>Los Cóbanos Village, Acajutla, Sonsonate, El Salvador</p>
-          </div>
-        </div>
-        <div class="contact-card hours">
-          <div class="contact-icon">🕐</div>
-          <div>
-            <strong>Hours</strong>
-            <p>Tours daily 6am–2pm<br>Best conditions: early morning</p>
-          </div>
+        <div class="contact-note">
+          <span data-lang="en">Ask for <strong>Victor</strong> on WhatsApp: +503 6444 1869. English, Spanish, boat access, whale-watching license.</span>
+          <span data-lang="es">Pregunta por <strong>Víctor</strong> en WhatsApp: +503 6444 1869. Inglés, español, lancha y licencia de ballenas.</span>
         </div>
       </div>
-      <div class="contact-note">
-        📲 WhatsApp or call <strong>+503 6444 1869</strong> to book &nbsp;·&nbsp; ⚡ Bitcoin Lightning · USD cash · Card
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-brand">
         <span class="footer-logo">🐠 Los Cóbanos Tours</span>
-        <p>Protecting and sharing El Salvador's most precious marine ecosystem.<br>📲 <a href="https://wa.me/50364441869" style="color:var(--green-300)">+503 6444 1869</a></p>
+        <p data-lang="en">Snorkeling, whale watching, and local coastal guiding in Los Cóbanos with Victor as the primary contact.</p>
+        <p data-lang="es">Snorkel, avistamiento de ballenas y guía costera local en Los Cóbanos con Víctor como contacto principal.</p>
       </div>
       <div class="footer-links">
-        <a href="#tours">Tours</a>
-        <a href="#reef">The Reef</a>
-        <a href="#about">About</a>
-        <a href="#contact">Book</a>
+        <a href="#tours">
+          <span data-lang="en">Tours</span>
+          <span data-lang="es">Tours</span>
+        </a>
+        <a href="#wildlife">
+          <span data-lang="en">Wildlife</span>
+          <span data-lang="es">Fauna</span>
+        </a>
+        <a href="#map">
+          <span data-lang="en">Meeting Point</span>
+          <span data-lang="es">Punto de encuentro</span>
+        </a>
+        <a href="#contact">
+          <span data-lang="en">Book</span>
+          <span data-lang="es">Reservar</span>
+        </a>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>Los Cóbanos Protected Natural Area · Acajutla, Sonsonate, El Salvador · Part of the <a href="https://www.marn.gob.sv/" target="_blank">MARN</a> protected areas network</p>
+      <p>
+        <span data-lang="en">Los Cóbanos, Sonsonate, El Salvador · Cash or Bitcoin · Wildlife notes sourced in docs/content-sources.md</span>
+        <span data-lang="es">Los Cóbanos, Sonsonate, El Salvador · Efectivo o Bitcoin · Notas de fauna documentadas en docs/content-sources.md</span>
+      </p>
     </div>
   </footer>
 
   <script>
-    // Smooth scroll for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(a => {
-      a.addEventListener('click', e => {
-        const target = document.querySelector(a.getAttribute('href'));
-        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+    const nav = document.querySelector('.nav');
+    const langButtons = Array.from(document.querySelectorAll('[data-set-lang]'));
+
+    document.querySelectorAll('a[href^="#"]').forEach((link) => {
+      link.addEventListener('click', (event) => {
+        const target = document.querySelector(link.getAttribute('href'));
+        if (target) {
+          event.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
       });
     });
 
-    // Nav scroll effect
-    const nav = document.querySelector('.nav');
     window.addEventListener('scroll', () => {
       nav.classList.toggle('scrolled', window.scrollY > 60);
     });
-  </script>
 
+    function applyLanguage(lang) {
+      const isSpanish = lang === 'es';
+      document.body.classList.toggle('lang-es', isSpanish);
+      document.documentElement.lang = isSpanish ? 'es' : 'en';
+      langButtons.forEach((button) => {
+        const isActive = button.dataset.setLang === lang;
+        button.classList.toggle('is-active', isActive);
+        button.setAttribute('aria-pressed', String(isActive));
+      });
+      try {
+        localStorage.setItem('cobanos-lang', lang);
+      } catch (error) {
+        console.warn('Could not persist language preference.', error);
+      }
+    }
+
+    langButtons.forEach((button) => {
+      button.addEventListener('click', () => applyLanguage(button.dataset.setLang));
+    });
+
+    try {
+      const savedLang = localStorage.getItem('cobanos-lang');
+      if (savedLang === 'es') {
+        applyLanguage('es');
+      }
+    } catch (error) {
+      console.warn('Could not restore language preference.', error);
+    }
+  </script>
 </body>
 </html>

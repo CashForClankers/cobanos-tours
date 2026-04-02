@@ -1,0 +1,16 @@
+{
+  "name": "cobanos-tours",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lint": "node scripts/lint-html.mjs && node scripts/lint-css.mjs",
+    "test": "node --test",
+    "build": "node scripts/build.mjs",
+    "check": "npm run lint && npm test && npm run build",
+    "test:e2e": "npx playwright test",
+    "serve:dist": "python3 -m http.server 4173 -d dist"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.59.1"
+  }
+}

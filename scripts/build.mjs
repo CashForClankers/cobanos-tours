@@ -9,6 +9,7 @@ const copyTargets = [
   "b1a7c6f0d2e94aee9c65e6f1a4bd38c7.txt",
   "CNAME",
   "es",
+  "coffee-parking-lot.jpg",
   "favicon.svg",
   "google-site-verification.html",
   "iguana-parking-lot.jpg",

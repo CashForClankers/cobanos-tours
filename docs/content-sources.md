@@ -43,9 +43,29 @@ This site keeps marketing copy lightweight, but the wildlife and seasonality not
    - Included as live area/species-view references for visitors who want to explore local observations.
    - Used as a discovery aid, not as the sole authority for site-wide biological claims.
 
+7. El Salvador Divers, `Where We Dive`
+   URL: https://english.elsalvadordivers.com/dive-sites/
+   Notes:
+   - Supports cautious visitor-facing notes that Los Cóbanos has wreck diving in addition to reef life.
+   - Specifically mentions the `SS Douglas` and `SS Cheribon` as wrecks they dive on in Los Cóbanos.
+
+8. Visit El Salvador, `Diving and Snorkeling in El Salvador: Best Sites Guide`
+   URL: https://www.visitelsalvador.ai/blog/plongee-snorkeling-salvador-guide-complet
+   Notes:
+   - States that Los Cóbanos snorkeling is `possible year-round`, while visibility is variable and often best in the drier months.
+   - Lists `SS Douglas`, `SS Cheribon`, and `SS Arce` as wrecks to explore in the Los Cóbanos dive context.
+
+9. La Prensa Gráfica, `Arqueología submarina en El Salvador: los 3 barcos del siglo XIX hundidos en Los Cóbanos`
+   URL: https://www.laprensagrafica.com/Arqueologia-submarina-en-El-Salvador-los-3-barcos-del-siglo-XIX-hundidos-en-Los-Cobanos-t202504280001.html
+   Notes:
+   - Reports three documented historic wrecks within the protected Los Cóbanos area: `SS Columbus`, `Cheribon`, and `Douglas`.
+   - Adds useful historical context for the `Cheribon` and `Douglas` grounded in local underwater-archaeology reporting.
+
 ## Editorial choices
 
 - Avoid exact pricing claims unless Victor confirms them directly.
 - Avoid promising specific offshore wildlife sightings; keep language seasonal and condition-dependent.
-- Keep `Victor` prominent anywhere a visitor needs certainty: language support, boat access, whale-license context, payment, and meeting point.
+- Keep snorkeling language honest: possible year-round, often clearest in drier months, always dependent on visibility and sea state.
+- Treat wrecks as heritage/diving notes, not a guarantee for casual snorkel visitors.
+- Keep `Victor` prominent anywhere a visitor needs certainty: boat access, whale-license context, payment, meeting point, and day-of conditions.
 - Keep English primary, but make Spanish explicitly selectable and persistent.

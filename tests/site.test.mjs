@@ -43,11 +43,14 @@ test("wildlife references stay connected to sources", () => {
   assert.match(html, /coffee-parking-lot\.jpg/);
   assert.match(html, /iguana-parking-lot\.jpg/);
   assert.match(html, /good local coffee/i);
+  assert.match(html, /SS Douglas|SS Cheribon/);
   assert.match(html, /docs\/content-sources\.md/);
   assert.match(html, /MARN whale project/);
   assert.match(sources, /rsis\.ramsar\.org/);
   assert.match(sources, /visitelsalvador\.ai/);
   assert.match(sources, /whales\.org/);
+  assert.match(sources, /SS Douglas/);
+  assert.match(sources, /Cheribon/);
   assert.doesNotMatch(html, /youtu\.?be|youtube\.com/i);
   assert.doesNotMatch(sources, /youtu\.?be|youtube\.com/i);
 });

@@ -945,7 +945,7 @@ body.lang-es [data-lang="es"] {
   line-height: 1.5;
 }
 
-.gallery-item.placeholder {
+.gallery-item-note {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -957,7 +957,7 @@ body.lang-es [data-lang="es"] {
   padding: 20px;
 }
 
-.gallery-item.placeholder span {
+.gallery-item-note span {
   font-size: 2rem;
 }
 

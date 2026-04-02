@@ -17,6 +17,8 @@ const reefGuidePage = await readFile(path.join(rootDir, "los-cobanos-reef-guide.
 const dayTripPage = await readFile(path.join(rootDir, "los-cobanos-day-trip-from-san-salvador.html"), "utf8");
 const spanishPage = await readFile(path.join(rootDir, "es", "index.html"), "utf8");
 const gscVerification = await readFile(path.join(rootDir, "google-site-verification.html"), "utf8");
+const indexNowKey = await readFile(path.join(rootDir, "b1a7c6f0d2e94aee9c65e6f1a4bd38c7.txt"), "utf8");
+const packageJson = await readFile(path.join(rootDir, "package.json"), "utf8");
 
 test("primary contact flow is present", () => {
   assert.match(html, /Victor/i);
@@ -95,4 +97,10 @@ test("focused pages keep direct contact and canonical links", () => {
 
 test("search console verification placeholder remains explicit", () => {
   assert.match(gscVerification, /placeholder/i);
+});
+
+test("indexnow is wired for non-Google search engines", () => {
+  assert.equal(indexNowKey.trim(), "b1a7c6f0d2e94aee9c65e6f1a4bd38c7");
+  assert.match(packageJson, /submit:indexnow/);
+  assert.match(promotionPlaybook, /IndexNow/i);
 });

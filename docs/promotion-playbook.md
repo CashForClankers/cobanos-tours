@@ -20,6 +20,7 @@ The goal is not to open many accounts. The goal is to create a few durable disco
 - Dedicated Spanish URL: `https://los-cobanos.com/es/`
 - Search-friendly internal linking between the main pages
 - `google-site-verification.html` is checked in so Search Console verification only needs Google’s token pasted into that file
+- IndexNow key file is published so updated URLs can be pushed to Bing and Yandex without opening additional accounts
 
 ## Search intent to target
 
@@ -41,6 +42,11 @@ The goal is not to open many accounts. The goal is to create a few durable disco
 - Submit sitemap: `https://los-cobanos.com/sitemap.xml`
 - Watch which queries start impressions first.
 - If Google asks for HTML-file verification, replace the placeholder contents of `google-site-verification.html` with the exact token they provide and redeploy.
+
+### 1.5. Re-submit changed URLs through IndexNow
+
+- Run `npm run submit:indexnow` after major content changes or new landing pages are deployed.
+- This notifies IndexNow-compatible engines such as Bing and Yandex using the live sitemap URLs.
 
 ### 2. Create or tighten the Google Business Profile
 

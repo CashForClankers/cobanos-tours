@@ -954,6 +954,10 @@ body.lang-es [data-lang="es"] {
   height: 68%;
 }
 
+.coffee-arrival-photo {
+  object-position: center 86%;
+}
+
 .gallery-item-context .gallery-caption {
   position: relative;
   color: var(--green-900);
@@ -1366,6 +1370,10 @@ body.lang-es [data-lang="es"] {
 
   .gallery-item-context img {
     height: 190px;
+  }
+
+  .coffee-arrival-photo {
+    object-position: center 92%;
   }
 
   .map-frame iframe {

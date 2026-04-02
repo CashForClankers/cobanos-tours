@@ -11,6 +11,7 @@ const publicPages = [
   "whale-watching-el-salvador.html",
   "los-cobanos-reef-guide.html",
   "los-cobanos-day-trip-from-san-salvador.html",
+  "what-to-do-in-los-cobanos.html",
   path.join("es", "index.html")
 ];
 

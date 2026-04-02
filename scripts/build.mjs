@@ -22,6 +22,7 @@ const copyTargets = [
   "sitemap.xml",
   "styles.css",
   "sunset.jpg",
+  "what-to-do-in-los-cobanos.html",
   "whale-watching-el-salvador.html",
   "beach.jpg",
   "sign.jpg",

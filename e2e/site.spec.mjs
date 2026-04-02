@@ -39,6 +39,13 @@ test("wildlife resources and meeting point remain reachable", async ({ page }) =
 test("focused guides and spanish page are reachable", async ({ page }) => {
   await page.goto("/");
 
+  const whatToDoLinks = page.locator('a[href="what-to-do-in-los-cobanos.html"]');
+  await expect(whatToDoLinks.first()).toBeVisible();
+  await whatToDoLinks.first().click();
+  await expect(page).toHaveURL(/what-to-do-in-los-cobanos\.html$/);
+  await expect(page.getByRole("heading", { name: /What actually makes Los Cóbanos worth the stop/i })).toBeVisible();
+
+  await page.goto("/");
   const dayTripLinks = page.locator('a[href="los-cobanos-day-trip-from-san-salvador.html"]');
   await expect(dayTripLinks.first()).toBeVisible();
   await dayTripLinks.first().click();

@@ -15,6 +15,7 @@ const snorkelingPage = await readFile(path.join(rootDir, "snorkeling-el-salvador
 const whalesPage = await readFile(path.join(rootDir, "whale-watching-el-salvador.html"), "utf8");
 const reefGuidePage = await readFile(path.join(rootDir, "los-cobanos-reef-guide.html"), "utf8");
 const dayTripPage = await readFile(path.join(rootDir, "los-cobanos-day-trip-from-san-salvador.html"), "utf8");
+const whatToDoPage = await readFile(path.join(rootDir, "what-to-do-in-los-cobanos.html"), "utf8");
 const spanishPage = await readFile(path.join(rootDir, "es", "index.html"), "utf8");
 const gscVerification = await readFile(path.join(rootDir, "google-site-verification.html"), "utf8");
 const indexNowKey = await readFile(path.join(rootDir, "b1a7c6f0d2e94aee9c65e6f1a4bd38c7.txt"), "utf8");
@@ -75,6 +76,7 @@ test("seo crawl assets and canonical domain exist", () => {
   assert.match(sitemap, /whale-watching-el-salvador\.html/);
   assert.match(sitemap, /los-cobanos-reef-guide\.html/);
   assert.match(sitemap, /los-cobanos-day-trip-from-san-salvador\.html/);
+  assert.match(sitemap, /what-to-do-in-los-cobanos\.html/);
 });
 
 test("promotion playbook documents low-account outreach", () => {
@@ -90,12 +92,13 @@ test("supporting landing pages exist for targeted search intents", () => {
   assert.match(whalesPage, /Whale Watching El Salvador/);
   assert.match(reefGuidePage, /Los Cóbanos Reef Guide/);
   assert.match(dayTripPage, /Day Trip from San Salvador/);
+  assert.match(whatToDoPage, /What to Do in Los Cóbanos/);
   assert.match(spanishPage, /<html lang="es">/);
   assert.match(spanishPage, /Tours en Los Cóbanos/);
 });
 
 test("focused pages keep direct contact and canonical links", () => {
-  for (const page of [snorkelingPage, whalesPage, reefGuidePage, dayTripPage, spanishPage]) {
+  for (const page of [snorkelingPage, whalesPage, reefGuidePage, dayTripPage, whatToDoPage, spanishPage]) {
     assert.match(page, /https:\/\/wa\.me\/50364441869/);
     assert.match(page, /<link rel="canonical" href="https:\/\/los-cobanos\.com\//);
   }

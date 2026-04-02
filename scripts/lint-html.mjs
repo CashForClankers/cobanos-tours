@@ -4,51 +4,69 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const htmlPath = path.join(rootDir, "index.html");
-const html = await readFile(htmlPath, "utf8");
 
-assert.match(html, /<!doctype html>/i, "index.html must declare a doctype.");
-assert.match(html, /<html lang="en">/i, "The document must default to English.");
-assert.match(html, /<main id="main-content">/i, "The page should include a main landmark.");
-assert.ok(!/on(click|change|submit|keydown)\s*=/i.test(html), "Inline event handlers are not allowed.");
-assert.ok(!/<style[\s>]/i.test(html), "Section styles should live in styles.css.");
-assert.ok(!/\sstyle="/i.test(html), "Inline style attributes are not allowed.");
-assert.ok(!/youtu\.?be|youtube\.com/i.test(html), "Do not link directly to YouTube from the page.");
-assert.match(html, /<link rel="canonical" href="https:\/\/los-cobanos\.com\/">/i, "The canonical domain must be los-cobanos.com.");
-assert.match(html, /application\/ld\+json/i, "Structured data is required.");
-
-const requiredAnchors = [
-  "#tours",
-  "#reef",
-  "#wildlife",
-  "#plan",
-  "#victor",
-  "#map",
-  "#contact",
-  "https://wa.me/50364441869",
-  "tel:+50364441869",
-  "docs/content-sources.md",
-  "site.webmanifest",
-  "favicon.svg"
+const publicPages = [
+  "index.html",
+  "snorkeling-el-salvador.html",
+  "whale-watching-el-salvador.html",
+  "los-cobanos-reef-guide.html",
+  "los-cobanos-day-trip-from-san-salvador.html",
+  path.join("es", "index.html")
 ];
 
-for (const href of requiredAnchors) {
-  assert.ok(html.includes(`href="${href}"`), `Missing required link: ${href}`);
+for (const relativePath of publicPages) {
+  const htmlPath = path.join(rootDir, relativePath);
+  const html = await readFile(htmlPath, "utf8");
+  const pageDir = path.dirname(htmlPath);
+  const expectedLang = relativePath === path.join("es", "index.html") ? "es" : "en";
+
+  assert.match(html, /<!doctype html>/i, `${relativePath} must declare a doctype.`);
+  assert.match(html, new RegExp(`<html lang="${expectedLang}">`, "i"), `${relativePath} must declare the expected document language.`);
+  assert.match(html, /<main id="main-content">/i, `${relativePath} should include a main landmark.`);
+  assert.ok(!/on(click|change|submit|keydown)\s*=/i.test(html), `${relativePath} must not use inline event handlers.`);
+  assert.ok(!/<style[\s>]/i.test(html), `${relativePath} must keep styles in styles.css.`);
+  assert.ok(!/\sstyle="/i.test(html), `${relativePath} must not use inline style attributes.`);
+  assert.ok(!/youtu\.?be|youtube\.com/i.test(html), `${relativePath} must not link directly to YouTube.`);
+  assert.match(html, /<title>.+<\/title>/i, `${relativePath} needs a title.`);
+  assert.match(html, /<meta name="description" content="[^"]+"/i, `${relativePath} needs a meta description.`);
+  assert.match(html, /<link rel="canonical" href="https:\/\/los-cobanos\.com\//i, `${relativePath} must use the los-cobanos.com canonical domain.`);
+
+  const localAssetRefs = [...html.matchAll(/(?:src|href)="([^":?#]+?\.(?:css|jpg|png|svg|xml|txt|webmanifest|md|html))"/gi)].map((match) => match[1]);
+  for (const relativeRef of localAssetRefs) {
+    if (relativeRef.startsWith("/")) {
+      continue;
+    }
+    await access(path.resolve(pageDir, relativeRef));
+  }
+
+  const imageTags = [...html.matchAll(/<img\b[^>]*alt="([^"]*)"[^>]*>/gi)];
+  for (const [, altText] of imageTags) {
+    assert.ok(altText.trim().length > 0, `Every image in ${relativePath} needs alt text.`);
+  }
+
+  if (relativePath === "index.html") {
+    assert.match(html, /application\/ld\+json/i, "index.html must include structured data.");
+    for (const href of [
+      "#tours",
+      "#reef",
+      "#wildlife",
+      "#plan",
+      "#victor",
+      "#map",
+      "#contact",
+      "https://wa.me/50364441869",
+      "tel:+50364441869",
+      "docs/content-sources.md",
+      "site.webmanifest",
+      "favicon.svg"
+    ]) {
+      assert.ok(html.includes(`href="${href}"`), `index.html is missing required link: ${href}`);
+    }
+    for (const sectionId of ["tours", "reef", "victor", "wildlife", "plan", "map", "about", "contact"]) {
+      assert.ok(html.includes(`<section id="${sectionId}"`), `index.html is missing section: ${sectionId}`);
+    }
+    assert.ok(imageTags.length >= 3, "index.html should include at least three descriptive images.");
+  }
 }
 
-for (const sectionId of ["tours", "reef", "victor", "wildlife", "plan", "map", "about", "contact"]) {
-  assert.ok(html.includes(`<section id="${sectionId}"`), `Missing section: ${sectionId}`);
-}
-
-const localAssetRefs = [...html.matchAll(/(?:src|href)="([^":?#]+?\.(?:css|jpg|png|svg|xml|txt|webmanifest|md))"/gi)].map((match) => match[1]);
-for (const relativeRef of localAssetRefs) {
-  await access(path.join(rootDir, relativeRef));
-}
-
-const imageTags = [...html.matchAll(/<img\b[^>]*alt="([^"]*)"[^>]*>/gi)];
-assert.ok(imageTags.length >= 3, "The site should include at least three descriptive images.");
-for (const [, altText] of imageTags) {
-  assert.ok(altText.trim().length > 0, "Every image needs alt text.");
-}
-
-console.log(`HTML lint passed for ${path.relative(rootDir, htmlPath)}.`);
+console.log(`HTML lint passed for ${publicPages.length} public pages.`);

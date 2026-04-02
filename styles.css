@@ -827,6 +827,13 @@ body.lang-es [data-lang="es"] {
   gap: 20px;
 }
 
+.guide-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 24px;
+}
+
 .search-card,
 .faq-item {
   background: var(--white);
@@ -849,6 +856,36 @@ body.lang-es [data-lang="es"] {
 .faq-item p {
   color: var(--text-muted);
   font-size: 0.94rem;
+}
+
+.guide-card {
+  display: block;
+  text-decoration: none;
+  background: linear-gradient(135deg, var(--green-900) 0%, var(--ocean-900) 100%);
+  border: 1px solid rgba(95, 217, 138, 0.24);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: 24px;
+  color: var(--white);
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.guide-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(95, 217, 138, 0.5);
+}
+
+.guide-card strong {
+  display: block;
+  color: var(--green-300);
+  font-size: 1.08rem;
+  margin-bottom: 8px;
+}
+
+.guide-card p {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.92rem;
 }
 
 .faq-section {
@@ -1228,6 +1265,7 @@ body.lang-es [data-lang="es"] {
   .gallery-grid,
   .contact-grid,
   .tips-grid,
+  .guide-grid,
   .search-grid,
   .faq-grid {
     grid-template-columns: 1fr;

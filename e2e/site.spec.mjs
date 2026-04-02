@@ -35,3 +35,18 @@ test("wildlife resources and meeting point remain reachable", async ({ page }) =
   await expect(mapSection.getByText("13.5254549, -89.8061826").first()).toBeVisible();
   await expect(mapSection.getByRole("link", { name: /Confirm with Victor|Confirmar con Víctor/i })).toBeVisible();
 });
+
+test("focused guides and spanish page are reachable", async ({ page }) => {
+  await page.goto("/");
+
+  const dayTripLinks = page.locator('a[href="los-cobanos-day-trip-from-san-salvador.html"]');
+  await expect(dayTripLinks.first()).toBeVisible();
+  await dayTripLinks.first().click();
+  await expect(page).toHaveURL(/los-cobanos-day-trip-from-san-salvador\.html$/);
+  await expect(page.getByRole("heading", { name: /Plan a Los Cóbanos Nature Day from San Salvador/i })).toBeVisible();
+
+  await page.goto("/es/");
+  await expect(page.locator("html")).toHaveAttribute("lang", "es");
+  await expect(page.getByRole("heading", { name: /Explora Los Cóbanos con Víctor/i })).toBeVisible();
+  await expect(page.getByRole("navigation", { name: /Principal/i }).getByRole("link", { name: "English" })).toBeVisible();
+});

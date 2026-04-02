@@ -12,6 +12,15 @@ This repo now covers the on-site SEO foundation. The remaining promotion work sh
 
 The goal is not to open many accounts. The goal is to create a few durable discovery surfaces that can keep driving branded and non-branded search.
 
+## What is already done in the site
+
+- Canonical domain: `https://los-cobanos.com/`
+- XML sitemap: `https://los-cobanos.com/sitemap.xml`
+- English-primary landing pages for snorkeling, whale watching, reef planning, and day-trip intent
+- Dedicated Spanish URL: `https://los-cobanos.com/es/`
+- Search-friendly internal linking between the main pages
+- `google-site-verification.html` is checked in so Search Console verification only needs Google’s token pasted into that file
+
 ## Search intent to target
 
 - `Los Cobanos snorkeling`
@@ -31,6 +40,7 @@ The goal is not to open many accounts. The goal is to create a few durable disco
 - Add property: `https://los-cobanos.com/`
 - Submit sitemap: `https://los-cobanos.com/sitemap.xml`
 - Watch which queries start impressions first.
+- If Google asks for HTML-file verification, replace the placeholder contents of `google-site-verification.html` with the exact token they provide and redeploy.
 
 ### 2. Create or tighten the Google Business Profile
 
@@ -97,3 +107,8 @@ Even a small number of reviews materially improves map and directory credibility
 - posting the same promotional message everywhere
 - making up public prices that may go stale
 - promising wildlife sightings
+
+## Search architecture notes
+
+- Google’s multilingual guidance is a good reason to keep English and Spanish on separate URLs where possible instead of relying only on in-page toggles.
+- Google’s image SEO guidance is a good reason to keep real crawlable images with descriptive alt text on the key landing pages.

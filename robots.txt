@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://cashforclankers.github.io/cobanos-tours/sitemap.xml
+
+Sitemap: https://los-cobanos.com/sitemap.xml

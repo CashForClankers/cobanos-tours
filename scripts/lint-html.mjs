@@ -14,6 +14,8 @@ assert.ok(!/on(click|change|submit|keydown)\s*=/i.test(html), "Inline event hand
 assert.ok(!/<style[\s>]/i.test(html), "Section styles should live in styles.css.");
 assert.ok(!/\sstyle="/i.test(html), "Inline style attributes are not allowed.");
 assert.ok(!/youtu\.?be|youtube\.com/i.test(html), "Do not link directly to YouTube from the page.");
+assert.match(html, /<link rel="canonical" href="https:\/\/los-cobanos\.com\/">/i, "The canonical domain must be los-cobanos.com.");
+assert.match(html, /application\/ld\+json/i, "Structured data is required.");
 
 const requiredAnchors = [
   "#tours",
@@ -25,7 +27,9 @@ const requiredAnchors = [
   "#contact",
   "https://wa.me/50364441869",
   "tel:+50364441869",
-  "docs/content-sources.md"
+  "docs/content-sources.md",
+  "site.webmanifest",
+  "favicon.svg"
 ];
 
 for (const href of requiredAnchors) {
@@ -36,7 +40,7 @@ for (const sectionId of ["tours", "reef", "victor", "wildlife", "plan", "map", "
   assert.ok(html.includes(`<section id="${sectionId}"`), `Missing section: ${sectionId}`);
 }
 
-const localAssetRefs = [...html.matchAll(/(?:src|href)="([^":?#]+?\.(?:css|jpg|png|md))"/gi)].map((match) => match[1]);
+const localAssetRefs = [...html.matchAll(/(?:src|href)="([^":?#]+?\.(?:css|jpg|png|svg|xml|txt|webmanifest|md))"/gi)].map((match) => match[1]);
 for (const relativeRef of localAssetRefs) {
   await access(path.join(rootDir, relativeRef));
 }

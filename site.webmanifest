@@ -1,0 +1,16 @@
+{
+  "name": "Los Cóbanos Tours",
+  "short_name": "Los Cóbanos",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0d2818",
+  "description": "El Salvador snorkeling, whale watching, and nature day trips with Victor in Los Cóbanos.",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

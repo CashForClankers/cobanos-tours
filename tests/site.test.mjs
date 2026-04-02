@@ -7,7 +7,13 @@ import { fileURLToPath } from "node:url";
 const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const html = await readFile(path.join(rootDir, "index.html"), "utf8");
 const sources = await readFile(path.join(rootDir, "docs", "content-sources.md"), "utf8");
+const promotionPlaybook = await readFile(path.join(rootDir, "docs", "promotion-playbook.md"), "utf8");
 const cname = await readFile(path.join(rootDir, "CNAME"), "utf8");
+const robots = await readFile(path.join(rootDir, "robots.txt"), "utf8");
+const sitemap = await readFile(path.join(rootDir, "sitemap.xml"), "utf8");
+const snorkelingPage = await readFile(path.join(rootDir, "snorkeling-el-salvador.html"), "utf8");
+const whalesPage = await readFile(path.join(rootDir, "whale-watching-el-salvador.html"), "utf8");
+const reefGuidePage = await readFile(path.join(rootDir, "los-cobanos-reef-guide.html"), "utf8");
 
 test("primary contact flow is present", () => {
   assert.match(html, /Victor/i);
@@ -30,6 +36,7 @@ test("wildlife references stay connected to sources", () => {
   const iNaturalistLinks = [...html.matchAll(/https:\/\/www\.inaturalist\.org\/observations\?/g)];
   assert.ok(iNaturalistLinks.length >= 3, "Expected at least three iNaturalist observation links.");
   assert.match(html, /docs\/content-sources\.md/);
+  assert.match(html, /MARN whale project/);
   assert.match(sources, /rsis\.ramsar\.org/);
   assert.match(sources, /visitelsalvador\.ai/);
   assert.match(sources, /whales\.org/);
@@ -45,4 +52,27 @@ test("critical sections remain in place", () => {
 
 test("custom domain is checked into the repo", () => {
   assert.equal(cname.trim(), "los-cobanos.com");
+});
+
+test("seo crawl assets and canonical domain exist", () => {
+  assert.match(html, /<link rel="canonical" href="https:\/\/los-cobanos\.com\/">/);
+  assert.match(html, /application\/ld\+json/);
+  assert.match(robots, /Sitemap:\s+https:\/\/los-cobanos\.com\/sitemap\.xml/);
+  assert.match(sitemap, /<loc>https:\/\/los-cobanos\.com\/<\/loc>/);
+  assert.match(sitemap, /snorkeling-el-salvador\.html/);
+  assert.match(sitemap, /whale-watching-el-salvador\.html/);
+  assert.match(sitemap, /los-cobanos-reef-guide\.html/);
+});
+
+test("promotion playbook documents low-account outreach", () => {
+  assert.match(promotionPlaybook, /Google Business Profile/);
+  assert.match(promotionPlaybook, /TripAdvisor/);
+  assert.match(promotionPlaybook, /Reddit/);
+  assert.match(promotionPlaybook, /https:\/\/los-cobanos\.com\//);
+});
+
+test("supporting landing pages exist for targeted search intents", () => {
+  assert.match(snorkelingPage, /Snorkeling El Salvador/);
+  assert.match(whalesPage, /Whale Watching El Salvador/);
+  assert.match(reefGuidePage, /Los Cóbanos Reef Guide/);
 });

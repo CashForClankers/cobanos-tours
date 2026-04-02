@@ -7,9 +7,16 @@ const distDir = path.join(rootDir, "dist");
 
 const copyTargets = [
   "CNAME",
+  "favicon.svg",
   "index.html",
+  "los-cobanos-reef-guide.html",
+  "robots.txt",
+  "snorkeling-el-salvador.html",
+  "site.webmanifest",
+  "sitemap.xml",
   "styles.css",
   "sunset.jpg",
+  "whale-watching-el-salvador.html",
   "beach.jpg",
   "sign.jpg",
   "docs"

@@ -7,6 +7,7 @@ import { fileURLToPath } from "node:url";
 const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const html = await readFile(path.join(rootDir, "index.html"), "utf8");
 const sources = await readFile(path.join(rootDir, "docs", "content-sources.md"), "utf8");
+const cname = await readFile(path.join(rootDir, "CNAME"), "utf8");
 
 test("primary contact flow is present", () => {
   assert.match(html, /Victor/i);
@@ -40,4 +41,8 @@ test("critical sections remain in place", () => {
   for (const sectionId of ["tours", "reef", "victor", "wildlife", "plan", "map", "contact"]) {
     assert.ok(html.includes(`<section id="${sectionId}"`), `Missing section: ${sectionId}`);
   }
+});
+
+test("custom domain is checked into the repo", () => {
+  assert.equal(cname.trim(), "los-cobanos.com");
 });

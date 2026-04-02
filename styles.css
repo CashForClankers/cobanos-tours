@@ -750,6 +750,21 @@ body.lang-es [data-lang="es"] {
   font-size: 0.92rem;
 }
 
+.edu-card-media {
+  margin: 16px 0 18px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  min-height: 220px;
+  box-shadow: var(--shadow-md);
+}
+
+.edu-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .edu-card.iguana-card h3 {
   color: var(--green-300);
 }
@@ -900,9 +915,34 @@ body.lang-es [data-lang="es"] {
 }
 
 .gallery-item {
+  position: relative;
   border-radius: var(--radius-md);
   overflow: hidden;
   background: var(--green-50);
+}
+
+.gallery-item-featured::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 24%, rgba(0, 0, 0, 0.68) 100%);
+  pointer-events: none;
+}
+
+.gallery-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  padding: 18px 18px 16px;
+  color: var(--white);
+}
+
+.gallery-caption p {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.5;
 }
 
 .gallery-item.placeholder {

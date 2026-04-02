@@ -11,6 +11,7 @@ const copyTargets = [
   "es",
   "favicon.svg",
   "google-site-verification.html",
+  "iguana-parking-lot.jpg",
   "index.html",
   "los-cobanos-day-trip-from-san-salvador.html",
   "los-cobanos-reef-guide.html",

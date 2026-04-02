@@ -40,6 +40,7 @@ test("bilingual controls and content hooks exist", () => {
 test("wildlife references stay connected to sources", () => {
   const iNaturalistLinks = [...html.matchAll(/https:\/\/www\.inaturalist\.org\/observations\?/g)];
   assert.ok(iNaturalistLinks.length >= 3, "Expected at least three iNaturalist observation links.");
+  assert.match(html, /iguana-parking-lot\.jpg/);
   assert.match(html, /docs\/content-sources\.md/);
   assert.match(html, /MARN whale project/);
   assert.match(sources, /rsis\.ramsar\.org/);

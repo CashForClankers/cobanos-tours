@@ -68,7 +68,7 @@ Suggested short description:
 
 Suggested summary:
 
-`Los Cóbanos Tours helps travelers explore one of El Salvador's best-known reef and coastal nature areas with Victor, a friendly local guide who speaks English and Spanish, has his own boat, and holds a whale-watching license. Ideal for snorkeling, wildlife days, ocean swimming, and broader Pacific coast itineraries.`
+`Los Cóbanos Tours helps travelers explore one of El Salvador's best-known reef and coastal nature areas with Victor, a friendly local guide who has his own boat and works with a captain carrying the government-required whale-watching license. Ideal for snorkeling, wildlife days, ocean swimming, and broader Pacific coast itineraries.`
 
 ### 4. One useful Reddit or Facebook post
 

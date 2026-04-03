@@ -1,6 +1,6 @@
 # Los Cobanos Tours — Promotional Content
 
-Ready-to-post promotional content for travel communities. Victor is the guide — bilingual English/Spanish, licensed whale watch captain, born and raised locally. Contact: WhatsApp +503 6444 1869. Site: https://los-cobanos.com/
+Ready-to-post promotional content for travel communities. Victor is the guide — bilingual English/Spanish, born and raised locally, with his own boat and a whale-watching captain carrying the required license. Contact: WhatsApp +503 6444 1869. Site: https://los-cobanos.com/
 
 ---
 
@@ -14,7 +14,7 @@ Ready-to-post promotional content for travel communities. Victor is the guide �
 
 ---
 
-Hey everyone — my name is Victor, I was born and grew up in Los Cóbanos. I've been guiding snorkel and boat tours here for years and recently got my whale-watching captain's license, so I can now run proper offshore whale watches in addition to the reef trips.
+Hey everyone — my name is Victor, I was born and grew up in Los Cóbanos. I've been guiding snorkel and boat tours here for years, and for offshore whale-watching trips I work with a captain who carries the required government license.
 
 A bit about what I offer:
 
@@ -44,7 +44,7 @@ I'd read that El Salvador has a coral reef somewhere on the Pacific coast but as
 
 Los Cóbanos is the only coral reef in El Salvador, and it's the largest rocky reef between Mexico and Costa Rica. What makes it unusual is that it grows on volcanic rock, not limestone like the reefs most people have snorkeled before. The formations look almost otherworldly — ancient black lava colonized by living coral, dropping off into clear Pacific water. We saw parrotfish, a couple of sea turtles just hanging around the channels, Moorish idols, sea stars, huge sea urchins, grouper. My partner saw an octopus tucked into a crevice that I completely missed.
 
-The guide, Victor, is a local who grew up there and speaks fluent English. He's also a licensed whale watch captain, which I didn't know until we were out on the boat and he started explaining the reef structure and marine life in a way that clearly came from years of knowing that specific water. He checked conditions the evening before and texted me exactly where to meet. Gear was included.
+The guide, Victor, is a local who grew up there and speaks fluent English. He runs the trip on his own boat and works with a captain who carries the required whale-watching license. He checked conditions the evening before and texted me exactly where to meet. Gear was included.
 
 The iguanas in the parking lot before we launched were a nice bonus. Big green ones, totally relaxed.
 
@@ -64,7 +64,7 @@ Not a scuba post exactly, but figured this community would appreciate it.
 
 Los Cóbanos in El Salvador has two historic shipwrecks — the **SS Douglas** and the **Sheredos** — that are officially designated as the **first underwater archaeological sites in Central America**. They're protected by the government, access is regulated, and they sit within the reef zone where they've become artificial reef structures covered in coral and fish.
 
-I went with a local guide named Victor, who grew up in Los Cóbanos and holds a whale watch captain's license. He knows which parts of the wrecks are accessible on any given day depending on visibility and sea state. The wrecks are snorkelable — you don't need tanks — but you want decent swim fitness and the conditions have to cooperate. Victor assesses sea state every morning and will tell you honestly if the day is worth it.
+I went with a local guide named Victor, who grew up in Los Cóbanos and works with a whale-watching captain who carries the required government license. He knows which parts of the wrecks are accessible on any given day depending on visibility and sea state. The wrecks are snorkelable — you don't need tanks — but you want decent swim fitness and the conditions have to cooperate. Victor assesses sea state every morning and will tell you honestly if the day is worth it.
 
 The surrounding reef is volcanic — grows on ancient lava, not limestone — so it has a different visual character from most reefs. Deep crevices, coral-encrusted formations, parrotfish and grouper working the rock. Sea turtles are common.
 
@@ -90,7 +90,7 @@ Here's what makes it feel slightly unreal compared to what you'd pay for the sam
 
 **The reef itself** grows on volcanic rock, which gives it a completely different texture than Caribbean reefs. Ancient black lava formations colonized by living coral, parrotfish, sea turtles, Moorish idols, sea stars. Under the surface, two historic shipwrecks — the Douglas and the Sheredos — recognized as the first underwater archaeological sites in Central America. They're now artificial reefs, covered in coral and fish.
 
-Whale trips are seasonal and condition-dependent. The local guide, Victor, holds an actual whale-watch captain's license and runs offshore tours when conditions are right.
+Whale trips are seasonal and condition-dependent. The local guide, Victor, runs offshore tours on his own boat with a captain who carries the required government whale-watching license when conditions are right.
 
 **The iguanas** are hanging out in the parking lot before you even launch.
 
@@ -118,7 +118,7 @@ Los Cóbanos reef is on the Pacific coast, 90 min from San Salvador. Volcanic re
 
 [Photo: the volcanic tide pools at Los Cóbanos at low tide — ancient black lava formations with coral and sea stars visible in the clear water]
 
-I went with Victor — he's a local guide born in Los Cóbanos, speaks English and Spanish fluently, and holds an official whale-watch captain's license. Friendly, knowledgeable, owns his own boat. He confirmed conditions the evening before and met me exactly where he said he would.
+I went with Victor — he's a local guide born in Los Cóbanos, speaks English and Spanish fluently, and runs trips on his own boat with a captain who holds the official whale-watching license. Friendly, knowledgeable. He confirmed conditions the evening before and met me exactly where he said he would.
 
 Tours from $75 💵 Cash or Bitcoin accepted ⚡
 
@@ -137,7 +137,7 @@ Budget tip for El Salvador travelers: skip the middleman and book direct with Vi
 
 Los Cóbanos is El Salvador's only coral reef — 90 min from San Salvador, with volcanic reef habitat, sea turtles, historic shipwrecks, and seasonal offshore wildlife. It's genuinely one of the most underrated nature spots in Central America.
 
-Victor is the local guide — born there, bilingual English/Spanish, licensed whale watch captain. Snorkeling from **$75** booked directly with him vs. paying more through a tour aggregator for the same boat and same guide.
+Victor is the local guide — born there, bilingual English/Spanish, with his own boat and a licensed whale-watching captain for offshore trips. Snorkeling from **$75** booked directly with him vs. paying more through a tour aggregator for the same boat and same guide.
 
 He checks sea conditions every morning so you won't show up for a bad-visibility day. Cash or Bitcoin accepted — no card fees either.
 
@@ -187,7 +187,7 @@ The iguanas you'll see before you even get in the water — large green iguanas 
 
 **The guide: Victor**
 
-The person to contact is Victor. He was born in Los Cóbanos, has guided the reef for years, and holds an official whale-watching captain's license. He speaks **English and Spanish** fluently and owns his own boat — which matters because you're dealing directly with someone who knows the reef, not a booking platform staffing it out.
+The person to contact is Victor. He was born in Los Cóbanos, has guided the reef for years, and runs trips on his own boat with a captain who holds the required whale-watching license. He speaks **English and Spanish** fluently — which matters because you're dealing directly with someone who knows the reef, not a booking platform staffing it out.
 
 Practical details:
 - Book via WhatsApp at least 48 hours in advance: **+503 6444 1869**
@@ -219,7 +219,7 @@ Hope this helps anyone planning a trip.
 
 ## Google Business Profile Description (500 chars)
 
-Los Cóbanos Tours with Victor — snorkeling El Salvador's only coral reef, whale watching, and shipwreck-oriented nature trips on the Pacific coast. Victor is a bilingual (English/Spanish) local guide and licensed whale watch captain with his own boat. The reef grows on volcanic rock and the area includes historic shipwrecks. Book direct via WhatsApp. Cash or Bitcoin accepted. About 90 min from San Salvador.
+Los Cóbanos Tours with Victor — snorkeling El Salvador's only coral reef, whale watching, and shipwreck-oriented nature trips on the Pacific coast. Victor is a bilingual (English/Spanish) local guide with his own boat and a government-licensed whale-watching captain for offshore trips. The reef grows on volcanic rock and the area includes historic shipwrecks. Book direct via WhatsApp. Cash or Bitcoin accepted. About 90 min from San Salvador.
 
 ---
 
@@ -241,7 +241,7 @@ Two shipwrecks sit inside the reef zone — the SS Douglas and the Sheredos. Fir
 ---
 
 **Tweet 4:**
-Whale trips are seasonal and depend on sea conditions. Victor — the local guide, born in Los Cóbanos — is a licensed whale watch captain with his own boat. He speaks English and Spanish, checks sea conditions every morning, and can advise whether the day is worth planning around. Books 48 hrs ahead via WhatsApp: +503 6444 1869.
+Whale trips are seasonal and depend on sea conditions. Victor — the local guide, born in Los Cóbanos — has his own boat and works with a captain who carries the required whale-watching license. He speaks English and Spanish, checks sea conditions every morning, and can advise whether the day is worth planning around. Books 48 hrs ahead via WhatsApp: +503 6444 1869.
 
 ---
 

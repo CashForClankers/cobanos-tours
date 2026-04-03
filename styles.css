@@ -873,6 +873,15 @@ body.lang-es [data-lang="es"] {
   font-size: 0.94rem;
 }
 
+.natural-history-page .section-header {
+  margin-bottom: 36px;
+}
+
+.natural-history-page .search-card,
+.natural-history-page .faq-item {
+  padding: 26px 22px;
+}
+
 .guide-card {
   display: block;
   text-decoration: none;
@@ -1398,5 +1407,28 @@ body.lang-es [data-lang="es"] {
 
   .section {
     padding: 80px 0;
+  }
+
+  .natural-history-page .section-title {
+    font-size: clamp(2rem, 8.4vw, 2.8rem);
+    line-height: 1.06;
+  }
+
+  .natural-history-page .search-card,
+  .natural-history-page .faq-item {
+    padding: 22px 18px;
+  }
+
+  .natural-history-page .search-card h3,
+  .natural-history-page .faq-item h3 {
+    font-size: 1.02rem;
+    line-height: 1.15;
+    margin-bottom: 10px;
+  }
+
+  .natural-history-page .search-card p,
+  .natural-history-page .faq-item p {
+    font-size: 0.95rem;
+    line-height: 1.58;
   }
 }

@@ -61,11 +61,18 @@ This site keeps marketing copy lightweight, but the wildlife and seasonality not
    - Reports three documented historic wrecks within the protected Los Cóbanos area: `SS Columbus`, `Cheribon`, and `Douglas`.
    - Adds useful historical context for the `Cheribon` and `Douglas` grounded in local underwater-archaeology reporting.
 
+10. elsalvador.com, `Pese a prohibición, iguanas y garrobos son vendidos en carretera`
+    URL: https://www.elsalvador.com/noticias/nacional/abandono-de-animales-especies-en-cautividad-silvestres-san-miguel-/1125139/2024/
+    Notes:
+    - Useful local reporting that iguanas and garrobos are still taken for sale and consumption in El Salvador despite wildlife-protection law.
+    - Supports cautious wording that visible big iguanas in protected Los Cóbanos likely reflect lower hunting pressure, not just chance.
+
 ## Editorial choices
 
 - Avoid exact pricing claims unless Victor confirms them directly.
 - Avoid promising specific offshore wildlife sightings; keep language seasonal and condition-dependent.
 - Keep snorkeling language honest: possible year-round, often clearest in drier months, always dependent on visibility and sea state.
 - Treat wrecks as heritage/diving notes, not a guarantee for casual snorkel visitors.
+- Treat the iguana-size note as a cautious inference from protected habitat plus lower hunting pressure; do not present it as a measured Los Cóbanos population study.
 - Keep `Victor` prominent anywhere a visitor needs certainty: boat access, whale-license context, payment, meeting point, and day-of conditions.
 - Keep English primary, but make Spanish explicitly selectable and persistent.

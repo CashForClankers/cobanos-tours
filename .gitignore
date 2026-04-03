@@ -5,4 +5,5 @@ node_modules/
 playwright-report/
 test-results/
 .ralph/
+.agents/
 .DS_Store

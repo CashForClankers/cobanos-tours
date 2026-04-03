@@ -67,6 +67,90 @@ This site keeps marketing copy lightweight, but the wildlife and seasonality not
     - Useful local reporting that iguanas and garrobos are still taken for sale and consumption in El Salvador despite wildlife-protection law.
     - Supports cautious wording that visible big iguanas in protected Los Cóbanos likely reflect lower hunting pressure, not just chance.
 
+11. Revista Geológica de América Central, `Caracterización hidrogeológica de la cuenca del río Las Marías, Los Cóbanos, Sonsonate, El Salvador`
+    URL: https://archivo.revistas.ucr.ac.cr/index.php/geologica/article/view/27074
+    Notes:
+    - Useful geology and hydrogeology context for the Los Cóbanos area.
+    - Supports concise wording about lithology, aquifer context, and a rocky coastal system rather than a simple sand-beach environment.
+
+12. PeerJ, `Rapid relative increase of crustose coralline algae following herbivore exclusion in a reef of El Salvador`
+    URL: https://pubmed.ncbi.nlm.nih.gov/33614270/
+    Notes:
+    - Important peer-reviewed evidence that benthic structure in a Los Cóbanos reef site responds measurably to herbivore pressure.
+    - Useful for explaining that the reef is active, sensitive, and scientifically studied rather than just scenic.
+
+13. Redalyc / Revista de Biología Tropical, `Bosques de coral negro y organismos asociados en la zona mesofótica de Los Cóbanos, El Salvador`
+    URL: https://www.redalyc.org/journal/449/44975700036/movil/
+    Notes:
+    - Confirms black-coral forests and associated fauna in deeper mesophotic water off Los Cóbanos.
+    - Useful for deeper natural-history pages, not for beginner-snorkel promises.
+
+14. Universidad de El Salvador thesis, `Diversidad, estructura y distribución de la comunidad de peces en la zona intermareal rocosa del área natural protegida los Cóbanos`
+    URL: https://repositorio.ues.edu.sv/items/7945c6aa-d0e6-4258-9e34-f08ada85cd2f
+    Notes:
+    - Strong local source for the ecological importance of the rocky intertidal fish community.
+    - Supports more specific copy about intertidal life and reef-edge habitat.
+
+15. Universidad de El Salvador thesis, `Estudio de las poblaciones de Macroalgas ... en la plataforma rocosa de los Cóbanos`
+    URL: https://repositorio.ues.edu.sv/items/29f62c68-ef67-4b6c-abfc-f0dd98cc134b
+    Notes:
+    - Describes Los Cóbanos as a rocky beach of volcanic origin with reef formation from 0 to 30 m depth.
+    - Recorded 74 macroalgae species, which is useful for talking about shoreline biological richness beyond coral.
+
+16. Universidad de El Salvador thesis, `Reclutamiento de Porites lobata ... Los Cóbanos`
+    URL: https://repositorio.ues.edu.sv/items/76a8d19f-1398-4859-91ea-118f589e2030
+    Notes:
+    - Useful for explaining reef maintenance and recovery through coral recruitment.
+    - Supports using `Porites lobata` as one of the key coral facts on the site.
+
+17. Universidad de El Salvador thesis, `Diversidad de Herpetofauna y factores de amenaza ... Complejo Los Cóbanos`
+    URL: https://repositorio.ues.edu.sv/items/a117cc9a-8986-4831-9f7e-66a0119eaf15
+    Notes:
+    - Strong local source that reptiles and amphibians in the coastal terrestrial patches of Los Cóbanos have been studied directly.
+    - Helps support the iguana/protected-area thread without overstating it.
+
+18. MARN, `Plan de manejo del Área Natural Protegida Complejo Los Cóbanos`
+    URL: https://rsis.ramsar.org/RISapp/files/57335786/documents/SV2419_mgt180919.pdf?language=en
+    Notes:
+    - Strong management and species-context source for mangroves, turtles, reptiles, birds, crustaceans, and the protected-area footprint.
+    - Useful when the site needs habitat facts that are broader than one thesis or one tourism article.
+
+19. Revista de Biología Tropical, `Bleaching events of the coral Porites lobata (2006-2022) and restoration activities at Ramsar site Complejo Los Cóbanos`
+    URL: https://www.scielo.sa.cr/scielo.php?pid=S0034-77442023000200006&script=sci_abstract
+    Notes:
+    - Confirms long-run bleaching history in `Porites lobata` and restoration work in Los Cóbanos.
+    - Useful for keeping reef language honest, current, and conservation-aware.
+
+20. Universidad de El Salvador thesis, `Composición y estructura de la fauna intermareal de equinodermos ... Los Cóbanos`
+    URL: https://repositorio.ues.edu.sv/items/abcfa4f4-6c9b-4bb5-a2f4-ea0d91d45add
+    Notes:
+    - Recorded `13` intertidal echinoderm species in the rocky reef system.
+    - Strong support for tide-pool and rocky-shore natural-history copy.
+
+21. Universidad de El Salvador thesis, `Distribución espacial de esponjas (Porifera: Demospongiae) en aguas someras ... Los Cóbanos`
+    URL: https://repositorio.ues.edu.sv/items/f3681db5-531a-45c8-ad44-619465a457cc
+    Notes:
+    - Useful for explaining that shallow-water invertebrate structure in Los Cóbanos has been measured directly.
+    - Connects sponge distribution to physical conditions like turbidity, substrate, and exposure.
+
+22. Universidad de El Salvador thesis, `Diversidad, abundancia y distribución de dinoflagelados epífitos ... Los Cóbanos`
+    URL: https://repositorio.ues.edu.sv/items/0b611128-eb4e-444a-9188-1b5b9604e2cb
+    Notes:
+    - Useful for showing that even the rocky intertidal micro-ecology has been studied locally.
+    - Supports more specific shoreline copy without turning public pages into lab notes.
+
+23. SciELO Mexico, `Primer registro de Psarocolius montezuma para El Salvador en la zona de amortiguamiento del Complejo Los Cóbanos`
+    URL: https://www.scielo.org.mx/scielo.php?pid=S1870-74592019000200203&script=sci_arttext
+    Notes:
+    - Strong bird reference showing the protected buffer zone can produce nationally notable records.
+    - Useful for above-water wildlife framing.
+
+24. Universidad de El Salvador thesis, `Biología reproductiva del ave cacique aliamarillo (Cacicus melanicterus) ... Complejo Los Cóbanos`
+    URL: https://repositorio.ues.edu.sv/items/af4187e3-9a01-450b-84fb-7885a31803aa
+    Notes:
+    - Adds another local bird source grounded inside the protected area and buffer zone.
+    - Useful for bird-focused wiki work and slower land-based nature copy.
+
 ## Editorial choices
 
 - Avoid exact pricing claims unless Victor confirms them directly.
@@ -74,5 +158,8 @@ This site keeps marketing copy lightweight, but the wildlife and seasonality not
 - Keep snorkeling language honest: possible year-round, often clearest in drier months, always dependent on visibility and sea state.
 - Treat wrecks as heritage/diving notes, not a guarantee for casual snorkel visitors.
 - Treat the iguana-size note as a cautious inference from protected habitat plus lower hunting pressure; do not present it as a measured Los Cóbanos population study.
+- Keep the new natural-history pages specific: volcanic shoreline, `Porites lobata`, bleaching/restoration, macroalgae, intertidal invertebrates, mangroves, birds, and protected habitat are stronger than generic paradise language.
+- Keep sea-turtle wording grounded in habitat and protection, not guaranteed encounters.
+- Avoid hammerhead, seahorse, and named dolphin-species claims until a primary Los Cóbanos source is in the source list.
 - Keep `Victor` prominent anywhere a visitor needs certainty: boat access, whale-license context, payment, meeting point, and day-of conditions.
 - Keep English primary, but make Spanish explicitly selectable and persistent.

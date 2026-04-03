@@ -15,6 +15,7 @@ const snorkelingPage = await readFile(path.join(rootDir, "snorkeling-el-salvador
 const whalesPage = await readFile(path.join(rootDir, "whale-watching-el-salvador.html"), "utf8");
 const reefGuidePage = await readFile(path.join(rootDir, "los-cobanos-reef-guide.html"), "utf8");
 const dayTripPage = await readFile(path.join(rootDir, "los-cobanos-day-trip-from-san-salvador.html"), "utf8");
+const naturalHistoryPage = await readFile(path.join(rootDir, "los-cobanos-natural-history.html"), "utf8");
 const whatToDoPage = await readFile(path.join(rootDir, "what-to-do-in-los-cobanos.html"), "utf8");
 const spanishPage = await readFile(path.join(rootDir, "es", "index.html"), "utf8");
 const gscVerification = await readFile(path.join(rootDir, "google-site-verification.html"), "utf8");
@@ -54,6 +55,12 @@ test("wildlife references stay connected to sources", () => {
   assert.match(sources, /SS Douglas/);
   assert.match(sources, /Cheribon/);
   assert.match(sources, /iguanas y garrobos son vendidos en carretera/i);
+  assert.match(sources, /SV2419_mgt180919\.pdf/);
+  assert.match(sources, /Porites lobata \(2006-2022\)/i);
+  assert.match(sources, /equinodermos/i);
+  assert.match(sources, /esponjas/i);
+  assert.match(sources, /dinoflagelados/i);
+  assert.match(sources, /Psarocolius montezuma/i);
   assert.doesNotMatch(html, /youtu\.?be|youtube\.com/i);
   assert.doesNotMatch(sources, /youtu\.?be|youtube\.com/i);
 });
@@ -78,6 +85,7 @@ test("seo crawl assets and canonical domain exist", () => {
   assert.match(sitemap, /whale-watching-el-salvador\.html/);
   assert.match(sitemap, /los-cobanos-reef-guide\.html/);
   assert.match(sitemap, /los-cobanos-day-trip-from-san-salvador\.html/);
+  assert.match(sitemap, /los-cobanos-natural-history\.html/);
   assert.match(sitemap, /what-to-do-in-los-cobanos\.html/);
 });
 
@@ -94,16 +102,25 @@ test("supporting landing pages exist for targeted search intents", () => {
   assert.match(whalesPage, /Whale Watching El Salvador/);
   assert.match(reefGuidePage, /Los Cóbanos Reef Guide/);
   assert.match(dayTripPage, /Day Trip from San Salvador/);
+  assert.match(naturalHistoryPage, /Los Cóbanos Natural History/);
   assert.match(whatToDoPage, /What to Do in Los Cóbanos/);
   assert.match(spanishPage, /<html lang="es">/);
   assert.match(spanishPage, /Tours en Los Cóbanos/);
 });
 
 test("focused pages keep direct contact and canonical links", () => {
-  for (const page of [snorkelingPage, whalesPage, reefGuidePage, dayTripPage, whatToDoPage, spanishPage]) {
+  for (const page of [snorkelingPage, whalesPage, reefGuidePage, dayTripPage, naturalHistoryPage, whatToDoPage, spanishPage]) {
     assert.match(page, /https:\/\/wa\.me\/50364441869/);
     assert.match(page, /<link rel="canonical" href="https:\/\/los-cobanos\.com\//);
   }
+});
+
+test("natural history page stays specific and source-backed", () => {
+  assert.match(naturalHistoryPage, /74 macroalgae species/i);
+  assert.match(naturalHistoryPage, /13 intertidal echinoderm species/i);
+  assert.match(naturalHistoryPage, /Psarocolius montezuma/);
+  assert.match(naturalHistoryPage, /docs\/natural-history\/OVERVIEW\.md/);
+  assert.match(html, /los-cobanos-natural-history\.html/);
 });
 
 test("search console verification placeholder remains explicit", () => {

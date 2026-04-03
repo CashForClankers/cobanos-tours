@@ -15,6 +15,7 @@ const copyTargets = [
   "iguana-parking-lot.jpg",
   "index.html",
   "los-cobanos-day-trip-from-san-salvador.html",
+  "los-cobanos-natural-history.html",
   "los-cobanos-reef-guide.html",
   "robots.txt",
   "snorkeling-el-salvador.html",

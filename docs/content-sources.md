@@ -2,6 +2,8 @@
 
 This site keeps marketing copy lightweight, but the wildlife and seasonality notes were tightened against the references below so future edits have a fact trail.
 
+Many of the strongest primary sources for Los Cóbanos are in Spanish. The English science-facing pages on this site should be treated as a translation layer from those Spanish originals, not as independent source material.
+
 ## Primary references used
 
 1. Ramsar Sites Information Service, `Complejo Los Cobanos`
@@ -159,6 +161,8 @@ This site keeps marketing copy lightweight, but the wildlife and seasonality not
 - Treat wrecks as heritage/diving notes, not a guarantee for casual snorkel visitors.
 - Treat the iguana-size note as a cautious inference from protected habitat plus lower hunting pressure; do not present it as a measured Los Cóbanos population study.
 - Keep the new natural-history pages specific: volcanic shoreline, `Porites lobata`, bleaching/restoration, macroalgae, intertidal invertebrates, mangroves, birds, and protected habitat are stronger than generic paradise language.
+- Search Spanish first when looking for primary material on Los Cóbanos. MARN, Ramsar-hosted plans, UES theses, and local journals are often better in Spanish than in English.
+- When the public page is English, translate tightly from the Spanish source instead of embellishing the claim.
 - Keep sea-turtle wording grounded in habitat and protection, not guaranteed encounters.
 - Avoid hammerhead, seahorse, and named dolphin-species claims until a primary Los Cóbanos source is in the source list.
 - Keep `Victor` prominent anywhere a visitor needs certainty: boat access, whale-license context, payment, meeting point, and day-of conditions.

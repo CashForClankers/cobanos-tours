@@ -13,14 +13,15 @@ const publicPages = [
   "los-cobanos-day-trip-from-san-salvador.html",
   "los-cobanos-natural-history.html",
   "what-to-do-in-los-cobanos.html",
-  path.join("es", "index.html")
+  path.join("es", "index.html"),
+  path.join("es", "historia-natural.html")
 ];
 
 for (const relativePath of publicPages) {
   const htmlPath = path.join(rootDir, relativePath);
   const html = await readFile(htmlPath, "utf8");
   const pageDir = path.dirname(htmlPath);
-  const expectedLang = relativePath === path.join("es", "index.html") ? "es" : "en";
+  const expectedLang = relativePath.startsWith(`es${path.sep}`) ? "es" : "en";
 
   assert.match(html, /<!doctype html>/i, `${relativePath} must declare a doctype.`);
   assert.match(html, new RegExp(`<html lang="${expectedLang}">`, "i"), `${relativePath} must declare the expected document language.`);

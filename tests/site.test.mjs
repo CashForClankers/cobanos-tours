@@ -18,6 +18,7 @@ const dayTripPage = await readFile(path.join(rootDir, "los-cobanos-day-trip-from
 const naturalHistoryPage = await readFile(path.join(rootDir, "los-cobanos-natural-history.html"), "utf8");
 const whatToDoPage = await readFile(path.join(rootDir, "what-to-do-in-los-cobanos.html"), "utf8");
 const spanishPage = await readFile(path.join(rootDir, "es", "index.html"), "utf8");
+const spanishNaturalHistoryPage = await readFile(path.join(rootDir, "es", "historia-natural.html"), "utf8");
 const gscVerification = await readFile(path.join(rootDir, "google-site-verification.html"), "utf8");
 const indexNowKey = await readFile(path.join(rootDir, "b1a7c6f0d2e94aee9c65e6f1a4bd38c7.txt"), "utf8");
 const packageJson = await readFile(path.join(rootDir, "package.json"), "utf8");
@@ -61,6 +62,8 @@ test("wildlife references stay connected to sources", () => {
   assert.match(sources, /esponjas/i);
   assert.match(sources, /dinoflagelados/i);
   assert.match(sources, /Psarocolius montezuma/i);
+  assert.match(sources, /Search Spanish first/i);
+  assert.match(sources, /translation layer/i);
   assert.doesNotMatch(html, /youtu\.?be|youtube\.com/i);
   assert.doesNotMatch(sources, /youtu\.?be|youtube\.com/i);
 });
@@ -81,6 +84,7 @@ test("seo crawl assets and canonical domain exist", () => {
   assert.match(robots, /Sitemap:\s+https:\/\/los-cobanos\.com\/sitemap\.xml/);
   assert.match(sitemap, /<loc>https:\/\/los-cobanos\.com\/<\/loc>/);
   assert.match(sitemap, /<loc>https:\/\/los-cobanos\.com\/es\/<\/loc>/);
+  assert.match(sitemap, /es\/historia-natural\.html/);
   assert.match(sitemap, /snorkeling-el-salvador\.html/);
   assert.match(sitemap, /whale-watching-el-salvador\.html/);
   assert.match(sitemap, /los-cobanos-reef-guide\.html/);
@@ -106,10 +110,11 @@ test("supporting landing pages exist for targeted search intents", () => {
   assert.match(whatToDoPage, /What to Do in Los Cóbanos/);
   assert.match(spanishPage, /<html lang="es">/);
   assert.match(spanishPage, /Tours en Los Cóbanos/);
+  assert.match(spanishNaturalHistoryPage, /Historia natural de Los Cóbanos/);
 });
 
 test("focused pages keep direct contact and canonical links", () => {
-  for (const page of [snorkelingPage, whalesPage, reefGuidePage, dayTripPage, naturalHistoryPage, whatToDoPage, spanishPage]) {
+  for (const page of [snorkelingPage, whalesPage, reefGuidePage, dayTripPage, naturalHistoryPage, whatToDoPage, spanishPage, spanishNaturalHistoryPage]) {
     assert.match(page, /https:\/\/wa\.me\/50364441869/);
     assert.match(page, /<link rel="canonical" href="https:\/\/los-cobanos\.com\//);
   }
@@ -120,7 +125,16 @@ test("natural history page stays specific and source-backed", () => {
   assert.match(naturalHistoryPage, /13 intertidal echinoderm species/i);
   assert.match(naturalHistoryPage, /Psarocolius montezuma/);
   assert.match(naturalHistoryPage, /docs\/natural-history\/OVERVIEW\.md/);
+  assert.match(naturalHistoryPage, /es\/historia-natural\.html/);
   assert.match(html, /los-cobanos-natural-history\.html/);
+});
+
+test("spanish natural history page mirrors the same source-backed angles", () => {
+  assert.match(spanishNaturalHistoryPage, /74 especies de macroalgas/i);
+  assert.match(spanishNaturalHistoryPage, /191 especies de aves/i);
+  assert.match(spanishNaturalHistoryPage, /Psarocolius montezuma/);
+  assert.match(spanishNaturalHistoryPage, /docs\/natural-history\/OVERVIEW\.md/);
+  assert.match(spanishPage, /historia-natural\.html/);
 });
 
 test("search console verification placeholder remains explicit", () => {

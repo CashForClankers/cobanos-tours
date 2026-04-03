@@ -63,4 +63,7 @@ test("focused guides and spanish page are reachable", async ({ page }) => {
   await expect(page.locator("html")).toHaveAttribute("lang", "es");
   await expect(page.getByRole("heading", { name: /Explora Los Cóbanos con Víctor/i })).toBeVisible();
   await expect(page.getByRole("navigation", { name: /Principal/i }).getByRole("link", { name: "English" })).toBeVisible();
+  await page.getByRole("link", { name: /Historia natural/i }).last().click();
+  await expect(page).toHaveURL(/es\/historia-natural\.html$/);
+  await expect(page.getByRole("heading", { name: /Por qué Los Cóbanos se siente distinto/i })).toBeVisible();
 });

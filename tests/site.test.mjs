@@ -126,6 +126,8 @@ test("natural history page stays specific and source-backed", () => {
   assert.match(naturalHistoryPage, /Psarocolius montezuma/);
   assert.match(naturalHistoryPage, /docs\/natural-history\/OVERVIEW\.md/);
   assert.match(naturalHistoryPage, /es\/historia-natural\.html/);
+  assert.match(naturalHistoryPage, /SV2419_mgt180919\.pdf/);
+  assert.match(naturalHistoryPage, /S0034-77442023000200006/);
   assert.match(html, /los-cobanos-natural-history\.html/);
 });
 
@@ -134,6 +136,8 @@ test("spanish natural history page mirrors the same source-backed angles", () =>
   assert.match(spanishNaturalHistoryPage, /191 especies de aves/i);
   assert.match(spanishNaturalHistoryPage, /Psarocolius montezuma/);
   assert.match(spanishNaturalHistoryPage, /docs\/natural-history\/OVERVIEW\.md/);
+  assert.match(spanishNaturalHistoryPage, /SV2419_mgt180919\.pdf/);
+  assert.match(spanishNaturalHistoryPage, /S0034-77442023000200006/);
   assert.match(spanishPage, /historia-natural\.html/);
 });
 

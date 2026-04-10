@@ -1,0 +1,81 @@
+{
+  "version": "1",
+  "metadata": {
+    "name": "El Salvador Real Estate KB Bootstrap",
+    "goal": "Expand a source-disciplined research wiki from a seed investor article into a durable El Salvador real-estate knowledge base.",
+    "agent": {
+      "primary": "codex",
+      "fallbacks": "auto"
+    },
+    "checkCommand": "test -f research/el-salvador-real-estate-kb/README.md && test -f research/el-salvador-real-estate-kb/wiki/10-macro.md && test -f research/el-salvador-real-estate-kb/raw/source-index.md"
+  },
+  "tasks": [
+    {
+      "id": "kb-01",
+      "title": "Expand source map with official and Spanish-first material",
+      "description": "Add at least 10 more sources covering property law, permitting, tourism, remittances, financing, demographics, and hazard exposure. Prefer primary sources and Spanish-language local material where it is stronger.",
+      "acceptanceCriteria": [
+        "source-index includes category labels",
+        "each new source has a one-line note on why it matters",
+        "at least 4 new sources are Spanish-language"
+      ],
+      "dependsOn": [],
+      "passes": [
+        "research/el-salvador-real-estate-kb/raw/source-index.md mentions property law",
+        "research/el-salvador-real-estate-kb/raw/source-index.md mentions permitting",
+        "research/el-salvador-real-estate-kb/raw/source-index.md mentions hazards"
+      ]
+    },
+    {
+      "id": "kb-02",
+      "title": "Build submarket pages",
+      "description": "Create initial wiki pages for San Salvador, La Libertad / Surf City, and a diaspora-demand lens. Distinguish sourced facts from inference.",
+      "acceptanceCriteria": [
+        "three new wiki pages exist",
+        "each page has Sourced, Inference, and Needs verification sections",
+        "each page links back to the main thesis"
+      ],
+      "dependsOn": [
+        "kb-01"
+      ],
+      "passes": [
+        "test -f research/el-salvador-real-estate-kb/wiki/50-san-salvador.md",
+        "test -f research/el-salvador-real-estate-kb/wiki/60-surf-city.md",
+        "test -f research/el-salvador-real-estate-kb/wiki/70-diaspora-demand.md"
+      ]
+    },
+    {
+      "id": "kb-03",
+      "title": "Add legal and transaction mechanics page",
+      "description": "Create a page for title, registry, closing, taxes, restrictions, and foreign-buyer mechanics using official or legal-practice sources.",
+      "acceptanceCriteria": [
+        "page exists",
+        "uncertain claims are explicitly marked",
+        "at least 3 primary or near-primary references are included"
+      ],
+      "dependsOn": [
+        "kb-01"
+      ],
+      "passes": [
+        "test -f research/el-salvador-real-estate-kb/wiki/80-transaction-mechanics.md"
+      ]
+    },
+    {
+      "id": "kb-04",
+      "title": "Produce investor memo output",
+      "description": "Write a concise memo that states where the article thesis looks right, where it overreaches, and what would change the conclusion.",
+      "acceptanceCriteria": [
+        "memo exists under outputs",
+        "memo cites wiki pages and sources",
+        "memo includes a bull case, base case, and failure case"
+      ],
+      "dependsOn": [
+        "kb-02",
+        "kb-03"
+      ],
+      "passes": [
+        "test -f research/el-salvador-real-estate-kb/outputs/investor-memo.md"
+      ]
+    }
+  ]
+}

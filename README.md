@@ -33,6 +33,12 @@ Run the core checks:
 npm run check
 ```
 
+Run the production-state check:
+
+```bash
+npm run check:production
+```
+
 Run browser smoke tests:
 
 ```bash
@@ -51,6 +57,7 @@ npm run serve:dist
 - The canonical production domain is `https://los-cobanos.com/`.
 - `CNAME`, `robots.txt`, sitemap entries, and canonical tags should stay aligned to that domain.
 - If repo metadata is updated on GitHub, use the live site URL as the homepage.
+- GitHub Actions runs repo quality checks on pushes and pull requests, plus a production monitor that verifies GitHub Pages config and the live domain response.
 
 ## Content notes
 

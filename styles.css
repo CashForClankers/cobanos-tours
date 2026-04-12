@@ -214,7 +214,7 @@ body.lang-es [data-lang="es"] {
   justify-content: center;
   background:
     linear-gradient(160deg, rgba(13, 40, 24, 0.82) 0%, rgba(10, 31, 46, 0.72) 50%, rgba(13, 53, 82, 0.68) 100%),
-    url("sunset.jpg") center / cover no-repeat;
+    url("images/sunset.jpg") center / cover no-repeat;
   text-align: center;
   color: var(--white);
   overflow: hidden;

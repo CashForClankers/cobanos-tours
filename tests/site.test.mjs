@@ -43,8 +43,8 @@ test("bilingual controls and content hooks exist", () => {
 test("wildlife references stay connected to sources", () => {
   const iNaturalistLinks = [...html.matchAll(/https:\/\/www\.inaturalist\.org\/observations\?/g)];
   assert.ok(iNaturalistLinks.length >= 3, "Expected at least three iNaturalist observation links.");
-  assert.match(html, /coffee-parking-lot\.jpg/);
-  assert.match(html, /iguana-parking-lot\.jpg/);
+  assert.match(html, /images\/coffee-parking-lot\.jpg/);
+  assert.match(html, /images\/iguana-parking-lot\.jpg/);
   assert.match(html, /good local coffee/i);
   assert.match(html, /SS Douglas|SS Cheribon/);
   assert.match(html, /protected.*hunting pressure|menor presión de caza/i);

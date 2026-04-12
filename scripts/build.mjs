@@ -9,11 +9,9 @@ const copyTargets = [
   "b1a7c6f0d2e94aee9c65e6f1a4bd38c7.txt",
   "CNAME",
   "es",
-  "coffee-parking-lot.jpg",
   "favicon.svg",
   "google-site-verification.html",
-  "humpback-whale-breach.jpg",
-  "iguana-parking-lot.jpg",
+  "images",
   "index.html",
   "los-cobanos-day-trip-from-san-salvador.html",
   "los-cobanos-natural-history.html",
@@ -23,11 +21,8 @@ const copyTargets = [
   "site.webmanifest",
   "sitemap.xml",
   "styles.css",
-  "sunset.jpg",
   "what-to-do-in-los-cobanos.html",
   "whale-watching-el-salvador.html",
-  "beach.jpg",
-  "sign.jpg",
   "docs"
 ];
 

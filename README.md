@@ -13,6 +13,7 @@ The site is a lightweight static build focused on Los Cobanos tours, snorkeling,
 
 - `index.html`: main English landing page
 - `es/`: Spanish pages
+- `images/`: local site photography and visual assets
 - `styles.css`: shared site styling
 - `docs/`: source notes, citations, and promotion docs
 - `tests/`: fast content and SEO checks

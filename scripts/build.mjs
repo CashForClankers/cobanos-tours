@@ -12,6 +12,7 @@ const copyTargets = [
   "coffee-parking-lot.jpg",
   "favicon.svg",
   "google-site-verification.html",
+  "humpback-whale-breach.jpg",
   "iguana-parking-lot.jpg",
   "index.html",
   "los-cobanos-day-trip-from-san-salvador.html",

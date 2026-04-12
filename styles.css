@@ -992,10 +992,10 @@ body.lang-es [data-lang="es"] {
 .gallery-item-callout {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  padding: 26px 24px;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 0;
+  padding: 0;
   background: linear-gradient(180deg, rgba(95, 217, 138, 0.08) 0%, rgba(95, 217, 138, 0.16) 100%);
   border: 1px solid rgba(95, 217, 138, 0.4);
   color: var(--green-800);
@@ -1003,8 +1003,22 @@ body.lang-es [data-lang="es"] {
   box-shadow: var(--shadow-sm);
 }
 
-.gallery-item-callout span {
-  font-size: 2rem;
+.gallery-callout-photo {
+  display: block;
+  width: 100%;
+  height: 124px;
+  object-fit: cover;
+  object-position: center 42%;
+}
+
+.gallery-callout-copy {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 18px 20px 20px;
 }
 
 .gallery-item-callout strong {

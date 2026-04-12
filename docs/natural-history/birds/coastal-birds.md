@@ -20,3 +20,9 @@ Los Cóbanos is not only interesting below the waterline. The protected buffer z
 
 - Birdlife in Los Cóbanos is not filler around the reef. The protected buffer zone has produced nationally notable records, which tells you the habitat is doing real ecological work.
 - If the sea is rough, the slower bird-and-shoreline version of Los Cóbanos is still a real nature day.
+
+## Sources
+
+- SciELO bird record (`Psarocolius montezuma`): https://www.scielo.org.mx/scielo.php?pid=S1870-74592019000200203&script=sci_arttext
+- Los Cóbanos management plan: https://rsis.ramsar.org/RISapp/files/57335786/documents/SV2419_mgt180919.pdf?language=en
+- `Cacicus melanicterus` thesis: https://repositorio.ues.edu.sv/items/af4187e3-9a01-450b-84fb-7885a31803aa

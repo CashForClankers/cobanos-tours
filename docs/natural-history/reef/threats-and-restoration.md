@@ -21,3 +21,11 @@ The Los Cóbanos reef is scientifically important partly because it is stressed.
 
 - Los Cóbanos is not a perfect reef. It is a real Pacific reef that scientists track because bleaching, runoff, and recovery all show up clearly here.
 - The reef is worth seeing partly because it is still functioning under pressure, not because it looks untouched.
+
+## Sources
+
+- Bleaching and restoration paper: https://www.scielo.sa.cr/scielo.php?pid=S0034-77442023000200006&script=sci_abstract
+- Herbivore-exclusion paper: https://pubmed.ncbi.nlm.nih.gov/33614270/
+- Ramsar Site `2419`: https://rsis.ramsar.org/es/ris/2419
+- Los Cóbanos management plan: https://rsis.ramsar.org/RISapp/files/57335786/documents/SV2419_mgt180919.pdf?language=en
+- MARN CBD report: https://rcc.marn.gob.sv/bitstream/handle/123456789/252/Cuarto%20Informe%20Nacional%20CBD%20El%20Salvador.pdf?isAllowed=y&sequence=1

@@ -14,6 +14,7 @@ const sitemap = await readFile(path.join(rootDir, "sitemap.xml"), "utf8");
 const snorkelingPage = await readFile(path.join(rootDir, "snorkeling-el-salvador.html"), "utf8");
 const whalesPage = await readFile(path.join(rootDir, "whale-watching-el-salvador.html"), "utf8");
 const reefGuidePage = await readFile(path.join(rootDir, "los-cobanos-reef-guide.html"), "utf8");
+const reefEcologyPage = await readFile(path.join(rootDir, "los-cobanos-reef-ecology.html"), "utf8");
 const dayTripPage = await readFile(path.join(rootDir, "los-cobanos-day-trip-from-san-salvador.html"), "utf8");
 const naturalHistoryPage = await readFile(path.join(rootDir, "los-cobanos-natural-history.html"), "utf8");
 const whatToDoPage = await readFile(path.join(rootDir, "what-to-do-in-los-cobanos.html"), "utf8");
@@ -87,6 +88,7 @@ test("seo crawl assets and canonical domain exist", () => {
   assert.match(sitemap, /es\/historia-natural\.html/);
   assert.match(sitemap, /snorkeling-el-salvador\.html/);
   assert.match(sitemap, /whale-watching-el-salvador\.html/);
+  assert.match(sitemap, /los-cobanos-reef-ecology\.html/);
   assert.match(sitemap, /los-cobanos-reef-guide\.html/);
   assert.match(sitemap, /los-cobanos-day-trip-from-san-salvador\.html/);
   assert.match(sitemap, /los-cobanos-natural-history\.html/);
@@ -104,6 +106,7 @@ test("promotion playbook documents low-account outreach", () => {
 test("supporting landing pages exist for targeted search intents", () => {
   assert.match(snorkelingPage, /Snorkeling El Salvador/);
   assert.match(whalesPage, /Whale Watching El Salvador/);
+  assert.match(reefEcologyPage, /Los Cóbanos Reef Ecology/);
   assert.match(reefGuidePage, /Los Cóbanos Reef Guide/);
   assert.match(dayTripPage, /Day Trip from San Salvador/);
   assert.match(naturalHistoryPage, /Los Cóbanos Natural History/);
@@ -114,7 +117,7 @@ test("supporting landing pages exist for targeted search intents", () => {
 });
 
 test("focused pages keep direct contact and canonical links", () => {
-  for (const page of [snorkelingPage, whalesPage, reefGuidePage, dayTripPage, naturalHistoryPage, whatToDoPage, spanishPage, spanishNaturalHistoryPage]) {
+  for (const page of [snorkelingPage, whalesPage, reefEcologyPage, reefGuidePage, dayTripPage, naturalHistoryPage, whatToDoPage, spanishPage, spanishNaturalHistoryPage]) {
     assert.match(page, /https:\/\/wa\.me\/50364441869/);
     assert.match(page, /<link rel="canonical" href="https:\/\/los-cobanos\.com\//);
   }
@@ -126,6 +129,7 @@ test("key landing pages expose structured data and language alternates", () => {
   assert.match(snorkelingPage, /hreflang="x-default"/);
   assert.match(whalesPage, /FAQPage/);
   assert.match(whalesPage, /BreadcrumbList/);
+  assert.match(reefEcologyPage, /BreadcrumbList/);
   assert.match(dayTripPage, /FAQPage/);
   assert.match(dayTripPage, /BreadcrumbList/);
   assert.match(reefGuidePage, /BreadcrumbList/);
@@ -141,6 +145,8 @@ test("natural history page stays specific and source-backed", () => {
   assert.match(naturalHistoryPage, /74 macroalgae species/i);
   assert.match(naturalHistoryPage, /13 intertidal echinoderm species/i);
   assert.match(naturalHistoryPage, /Psarocolius montezuma/);
+  assert.match(naturalHistoryPage, /Mangroves and birds belong in the same Los Cóbanos story/i);
+  assert.match(naturalHistoryPage, /los-cobanos-reef-ecology\.html/);
   assert.match(naturalHistoryPage, /docs\/natural-history\/OVERVIEW\.md/);
   assert.match(naturalHistoryPage, /es\/historia-natural\.html/);
   assert.match(naturalHistoryPage, /SV2419_mgt180919\.pdf/);
@@ -152,10 +158,21 @@ test("spanish natural history page mirrors the same source-backed angles", () =>
   assert.match(spanishNaturalHistoryPage, /74 especies de macroalgas/i);
   assert.match(spanishNaturalHistoryPage, /191 especies de aves/i);
   assert.match(spanishNaturalHistoryPage, /Psarocolius montezuma/);
+  assert.match(spanishNaturalHistoryPage, /Manglares y aves también explican el lugar/i);
+  assert.match(spanishNaturalHistoryPage, /los-cobanos-reef-ecology\.html/);
   assert.match(spanishNaturalHistoryPage, /docs\/natural-history\/OVERVIEW\.md/);
   assert.match(spanishNaturalHistoryPage, /SV2419_mgt180919\.pdf/);
   assert.match(spanishNaturalHistoryPage, /S0034-77442023000200006/);
   assert.match(spanishPage, /historia-natural\.html/);
+});
+
+test("reef ecology page stays source-backed and constrained", () => {
+  assert.match(reefEcologyPage, /Porites lobata/);
+  assert.match(reefEcologyPage, /74 macroalgae species/i);
+  assert.match(reefEcologyPage, /Bleaching from 2006 to 2022/i);
+  assert.match(reefEcologyPage, /docs\/content-sources\.md/);
+  assert.match(reefEcologyPage, /What this page does not claim/i);
+  assert.match(reefEcologyPage, /los-cobanos-natural-history\.html/);
 });
 
 test("search console verification placeholder remains explicit", () => {

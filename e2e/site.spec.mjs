@@ -58,6 +58,9 @@ test("focused guides and spanish page are reachable", async ({ page }) => {
   await naturalHistoryLinks.first().click();
   await expect(page).toHaveURL(/los-cobanos-natural-history\.html$/);
   await expect(page.getByRole("heading", { name: /Why Los Cóbanos feels different/i })).toBeVisible();
+  await page.getByRole("link", { name: /Reef ecology/i }).first().click();
+  await expect(page).toHaveURL(/los-cobanos-reef-ecology\.html$/);
+  await expect(page.getByRole("heading", { name: /Why the Los Cóbanos reef feels rougher, richer, and more real/i })).toBeVisible();
 
   await page.goto("/es/");
   await expect(page.locator("html")).toHaveAttribute("lang", "es");

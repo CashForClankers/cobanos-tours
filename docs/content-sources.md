@@ -11,6 +11,8 @@ Many of the strongest primary sources for Los Cóbanos are in Spanish. The Engli
    Notes:
    - Confirms the Ramsar-listed `Complejo Los Cobanos`.
    - Confirms the area as `21,312 ha`.
+   - Confirms the designation date as `2019-02-02`; the later `2020` references in Ramsar materials are publication or announcement dates, not the designation date itself.
+   - Supports cautious wording for hawksbill nesting, leatherback habitat, and giant seahorse presence in the site overview.
 
 2. Ministerio de Medio Ambiente y Recursos Naturales, `Cuarto Informe Nacional CBD El Salvador`
    URL: https://rcc.marn.gob.sv/bitstream/handle/123456789/252/Cuarto%20Informe%20Nacional%20CBD%20El%20Salvador.pdf?isAllowed=y&sequence=1
@@ -164,6 +166,6 @@ Many of the strongest primary sources for Los Cóbanos are in Spanish. The Engli
 - Search Spanish first when looking for primary material on Los Cóbanos. MARN, Ramsar-hosted plans, UES theses, and local journals are often better in Spanish than in English.
 - When the public page is English, translate tightly from the Spanish source instead of embellishing the claim.
 - Keep sea-turtle wording grounded in habitat and protection, not guaranteed encounters.
-- Avoid hammerhead, seahorse, and named dolphin-species claims until a primary Los Cóbanos source is in the source list.
+- Avoid hammerhead nursery, named dolphin-species, and olive-ridley nesting claims until a primary Los Cóbanos source is in the source list.
 - Keep `Victor` prominent anywhere a visitor needs certainty: boat access, whale-license context, payment, meeting point, and day-of conditions.
 - Keep English primary, but make Spanish explicitly selectable and persistent.

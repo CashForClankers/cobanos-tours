@@ -21,3 +21,10 @@ The mangroves around Los Cóbanos are part of the reef story, not a separate sid
 
 - The mangroves near Los Cóbanos are one reason the reef can still function at all: they sit between river runoff and the coast.
 - Mangrove restoration in the protected complex is ongoing, so this is a living conservation landscape, not just a scenic backdrop.
+
+## Sources
+
+- Ramsar Site `2419`: https://rsis.ramsar.org/es/ris/2419
+- Los Cóbanos management plan: https://rsis.ramsar.org/RISapp/files/57335786/documents/SV2419_mgt180919.pdf?language=en
+- Mangrove restoration internship report: https://repositorio.ues.edu.sv/items/3926b28d-1dca-4ba5-a2fd-8d96e28383ca
+- SciELO bird paper for buffer-zone habitat context: https://www.scielo.org.mx/scielo.php?pid=S1870-74592019000200203&script=sci_arttext

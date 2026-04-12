@@ -21,3 +21,10 @@ A lot of Los Cóbanos' biological richness sits in the shallow rocky zone that c
 
 - The tide-pool and rocky-shore zone is full of small life researchers have counted directly, from brittle stars and sea cucumbers to sponges and algae on the rock platform.
 - Los Cóbanos rewards slower looking. Much of the biodiversity is in the shallow rocky edge, not only out on the boat line.
+
+## Sources
+
+- Echinoderm thesis: https://repositorio.ues.edu.sv/items/abcfa4f4-6c9b-4bb5-a2f4-ea0d91d45add
+- Sponge-distribution thesis: https://repositorio.ues.edu.sv/items/f3681db5-531a-45c8-ad44-619465a457cc
+- Epiphytic dinoflagellate thesis: https://repositorio.ues.edu.sv/items/0b611128-eb4e-444a-9188-1b5b9604e2cb
+- Los Cóbanos management plan: https://rsis.ramsar.org/RISapp/files/57335786/documents/SV2419_mgt180919.pdf?language=en

@@ -20,3 +20,9 @@ The wreck story at Los Cóbanos is stronger when treated as underwater history i
 
 - Los Cóbanos is not only reef. It also holds documented 19th-century wrecks inside the protected area.
 - Treat the wrecks as heritage first and dive context second.
+
+## Sources
+
+- El Salvador Divers dive-sites page: https://english.elsalvadordivers.com/dive-sites/
+- Visit El Salvador dive guide: https://www.visitelsalvador.ai/blog/plongee-snorkeling-salvador-guide-complet
+- La Prensa Gráfica wreck reporting: https://www.laprensagrafica.com/Arqueologia-submarina-en-El-Salvador-los-3-barcos-del-siglo-XIX-hundidos-en-Los-Cobanos-t202504280001.html

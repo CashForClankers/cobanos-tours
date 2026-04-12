@@ -20,3 +20,8 @@ Los Cóbanos is not only a coral story. The rocky platform also supports a docum
 
 - The rocks at the water's edge hold `74` documented macroalgae species, which is part of why Los Cóbanos feels more textured than a generic beach stop.
 - The shoreline is not empty rock. It is a living platform where algae, coral, tide-pool organisms, and reef fish overlap.
+
+## Sources
+
+- Macroalgae thesis: https://repositorio.ues.edu.sv/items/29f62c68-ef67-4b6c-abfc-f0dd98cc134b
+- Herbivore-exclusion paper: https://pubmed.ncbi.nlm.nih.gov/33614270/

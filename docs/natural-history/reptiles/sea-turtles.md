@@ -20,3 +20,9 @@ Sea turtles belong in the Los Cóbanos natural-history story, but the public cop
 
 - Los Cóbanos is marine turtle habitat inside a protected coastal system, including hawksbill turtle context in the official environmental record.
 - Treat turtles here as a conservation fact, not a guaranteed sighting.
+
+## Sources
+
+- Los Cóbanos management plan: https://rsis.ramsar.org/RISapp/files/57335786/documents/SV2419_mgt180919.pdf?language=en
+- Ramsar Site `2419`: https://rsis.ramsar.org/ris/2419
+- MARN CBD report: https://rcc.marn.gob.sv/bitstream/handle/123456789/252/Cuarto%20Informe%20Nacional%20CBD%20El%20Salvador.pdf?isAllowed=y&sequence=1

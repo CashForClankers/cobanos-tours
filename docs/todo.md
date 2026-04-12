@@ -23,5 +23,5 @@
 
 - [x] Verify the Ramsar designation year before using a year in new copy. If the year is needed, use `2019-02-02`; otherwise use `Ramsar Site No. 2419`.
 - [ ] Resolve wreck naming before listing more than `Douglas` and `Cheribon` as distinct wrecks.
-- [ ] Do not publish hammerhead nursery, named dolphin species, or olive-ridley nesting claims until a primary Los Cóbanos source is added.
+- [ ] Do not publish hammerhead nursery claims until a primary Los Cóbanos source is added.
 - [ ] Tighten the geology story only after confirming the stronger sediment / coquina wording in a primary source.

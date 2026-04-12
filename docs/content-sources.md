@@ -155,6 +155,24 @@ Many of the strongest primary sources for Los Cóbanos are in Spanish. The Engli
     - Adds another local bird source grounded inside the protected area and buffer zone.
     - Useful for bird-focused wiki work and slower land-based nature copy.
 
+25. Universidad de El Salvador thesis, `Interacciones de Megaptera novaeangliae y Stenella attenuata ... Complejo Los Cóbanos`
+    URL: https://repositorio.ues.edu.sv/items/443f72d0-7fe7-4079-9a20-3323d401d01e
+    Notes:
+    - Strong local cetacean source confirming `Stenella attenuata` in the marine area of Complejo Los Cóbanos.
+    - Useful for keeping species-level dolphin wording tied to Los Cóbanos instead of generic El Salvador whale-watch copy.
+
+26. MARN, `Más de 50 ballenas jorobadas visitaron Los Cóbanos durante la temporada de avistamiento de cetáceos`
+    URL: https://www.ambiente.gob.sv/mas-de-50-ballenas-jorobadas-visitaron-los-cobanos-durante-la-temporada-de-avistamiento-de-cetaceos/
+    Notes:
+    - Reports Los Cóbanos sightings of `Stenella attenuata`, `Tursiops truncatus`, and `Stenella coeruleoalba` during whale-watching season.
+    - Stronger than generic travel sources for named dolphin species in public or internal copy.
+
+27. UES library catalog entry, `Determinación de la flora bacteriana nasal y cloacal de la tortuga golfina Lepidochelys olivacea, especie anidante en el área natural protegida Complejo Los Cóbanos`
+    URL: https://catalogosiidca.csuca.org/Record/UES.21922
+    Notes:
+    - Strong local bibliographic evidence that `Lepidochelys olivacea` is treated as a nesting species in Los Cóbanos.
+    - Useful for resolving the olive-ridley nesting caution in internal notes, though hawksbill is still the cleaner public-facing turtle angle.
+
 ## Editorial choices
 
 - Avoid exact pricing claims unless Victor confirms them directly.
@@ -166,6 +184,6 @@ Many of the strongest primary sources for Los Cóbanos are in Spanish. The Engli
 - Search Spanish first when looking for primary material on Los Cóbanos. MARN, Ramsar-hosted plans, UES theses, and local journals are often better in Spanish than in English.
 - When the public page is English, translate tightly from the Spanish source instead of embellishing the claim.
 - Keep sea-turtle wording grounded in habitat and protection, not guaranteed encounters.
-- Avoid hammerhead nursery, named dolphin-species, and olive-ridley nesting claims until a primary Los Cóbanos source is in the source list.
+- Avoid hammerhead nursery claims until a primary Los Cóbanos source is in the source list.
 - Keep `Victor` prominent anywhere a visitor needs certainty: boat access, whale-license context, payment, meeting point, and day-of conditions.
 - Keep English primary, but make Spanish explicitly selectable and persistent.

@@ -10,7 +10,8 @@ const token = process.env.GH_TOKEN || process.env.GITHUB_TOKEN || "";
 const pagesApiUrl = `https://api.github.com/repos/${owner}/${repo}/pages`;
 const projectUrl = `https://${owner.toLowerCase()}.github.io/${repo}/`;
 const siteUrl = `https://${domain}/`;
-const expectedTitle = "Los Cóbanos Tours";
+const wwwUrl = `https://www.${domain}/`;
+const expectedTitle = "Los Cóbanos Local Guide";
 const githubPages404Marker = "There isn't a GitHub Pages site here.";
 
 function log(message) {
@@ -19,6 +20,10 @@ function log(message) {
 
 function fail(message) {
   throw new Error(message);
+}
+
+function warn(message) {
+  console.warn(`[verify-production] Warning: ${message}`);
 }
 
 function wait(ms) {
@@ -137,6 +142,39 @@ async function verifyLiveSite() {
   }
 
   log(`Live site OK: HTTP ${response.status}`);
+
+  const serverHeader = response.headers.get("server") || "";
+  if (serverHeader && !/cloudflare/i.test(serverHeader)) {
+    warn(`Live site server header is "${serverHeader}". Requests appear to be reaching the origin directly, so Cloudflare traffic analytics may stay at zero.`);
+  }
+}
+
+async function verifyWwwAlias() {
+  log(`Checking www host ${wwwUrl}`);
+
+  try {
+    const response = await fetch(wwwUrl, {
+      redirect: "manual",
+      headers: {
+        "Cache-Control": "no-cache"
+      }
+    });
+
+    const location = response.headers.get("location") || "";
+    if (response.status >= 300 && response.status <= 399 && location.startsWith(siteUrl)) {
+      log(`www host redirect OK: ${location}`);
+      return;
+    }
+
+    if (response.ok) {
+      warn(`www host responded with HTTP ${response.status} but did not redirect to ${siteUrl}. Keep only the apex host or add an explicit redirect.`);
+      return;
+    }
+
+    warn(`www host returned HTTP ${response.status}.`);
+  } catch (error) {
+    warn(`www host check failed: ${error.message}. This usually means the www DNS record or TLS certificate is not configured for ${domain}.`);
+  }
 }
 
 async function runAttempt(attempt) {
@@ -144,6 +182,7 @@ async function runAttempt(attempt) {
   await verifyPagesConfiguration();
   await verifyProjectRedirect();
   await verifyLiveSite();
+  await verifyWwwAlias();
 }
 
 let lastError = null;

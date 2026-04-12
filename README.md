@@ -59,6 +59,12 @@ npm run serve:dist
 - If repo metadata is updated on GitHub, use the live site URL as the homepage.
 - GitHub Actions runs repo quality checks on pushes and pull requests, plus a production monitor that verifies GitHub Pages config and the live domain response.
 
+## Traffic debugging notes
+
+- If Cloudflare Analytics shows `0` requests but `curl -I https://los-cobanos.com/` returns `server: GitHub.com`, the domain is likely reaching GitHub Pages directly and Cloudflare is not proxying traffic.
+- `https://www.los-cobanos.com/` should either redirect cleanly to `https://los-cobanos.com/` or be removed from DNS. A broken `www` certificate will leak traffic and produce browser warnings.
+- Google Search Console is not complete until `google-site-verification.html` contains the exact token Google provides and the live sitemap has been submitted.
+
 ## Content notes
 
 - Keep contact details, meeting-point coordinates, and booking links current.

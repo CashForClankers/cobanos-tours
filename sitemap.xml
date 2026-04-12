@@ -1,56 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://los-cobanos.com/</loc>
-    <lastmod>2026-04-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://los-cobanos.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://los-cobanos.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="es-SV" href="https://los-cobanos.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://los-cobanos.com/"/>
+    <lastmod>2026-04-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://los-cobanos.com/es/</loc>
-    <lastmod>2026-04-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://los-cobanos.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://los-cobanos.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="es-SV" href="https://los-cobanos.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://los-cobanos.com/"/>
+    <lastmod>2026-04-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://los-cobanos.com/es/historia-natural.html</loc>
-    <lastmod>2026-04-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://los-cobanos.com/los-cobanos-natural-history.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://los-cobanos.com/es/historia-natural.html"/>
+    <xhtml:link rel="alternate" hreflang="es-SV" href="https://los-cobanos.com/es/historia-natural.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://los-cobanos.com/los-cobanos-natural-history.html"/>
+    <lastmod>2026-04-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://los-cobanos.com/snorkeling-el-salvador.html</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-04-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://los-cobanos.com/whale-watching-el-salvador.html</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-04-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://los-cobanos.com/los-cobanos-reef-guide.html</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-04-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://los-cobanos.com/los-cobanos-day-trip-from-san-salvador.html</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-04-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://los-cobanos.com/los-cobanos-natural-history.html</loc>
-    <lastmod>2026-04-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://los-cobanos.com/los-cobanos-natural-history.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://los-cobanos.com/es/historia-natural.html"/>
+    <xhtml:link rel="alternate" hreflang="es-SV" href="https://los-cobanos.com/es/historia-natural.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://los-cobanos.com/los-cobanos-natural-history.html"/>
+    <lastmod>2026-04-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://los-cobanos.com/what-to-do-in-los-cobanos.html</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-04-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>

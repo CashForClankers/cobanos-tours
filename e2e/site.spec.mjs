@@ -3,7 +3,7 @@ import { expect, test } from "@playwright/test";
 test("primary booking flow is visible", async ({ page }) => {
   await page.goto("/");
 
-  await expect(page).toHaveTitle(/Los Cóbanos Tours/i);
+  await expect(page).toHaveTitle(/Los Cóbanos Local Guide/i);
   await expect(page.locator("#hero-title")).toBeVisible();
   await expect(page.getByRole("link", { name: /Book with Victor|Reservar con Víctor/i }).first()).toBeVisible();
   await expect(page.locator(".stat-num", { hasText: "21,312" })).toBeVisible();

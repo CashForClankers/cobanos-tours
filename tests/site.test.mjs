@@ -120,6 +120,23 @@ test("focused pages keep direct contact and canonical links", () => {
   }
 });
 
+test("key landing pages expose structured data and language alternates", () => {
+  assert.match(snorkelingPage, /FAQPage/);
+  assert.match(snorkelingPage, /BreadcrumbList/);
+  assert.match(snorkelingPage, /hreflang="x-default"/);
+  assert.match(whalesPage, /FAQPage/);
+  assert.match(whalesPage, /BreadcrumbList/);
+  assert.match(dayTripPage, /FAQPage/);
+  assert.match(dayTripPage, /BreadcrumbList/);
+  assert.match(reefGuidePage, /BreadcrumbList/);
+  assert.match(whatToDoPage, /FAQPage/);
+  assert.match(whatToDoPage, /BreadcrumbList/);
+  assert.match(naturalHistoryPage, /BreadcrumbList/);
+  assert.match(spanishPage, /LocalBusiness/);
+  assert.match(sitemap, /xmlns:xhtml=/);
+  assert.match(sitemap, /xhtml:link rel="alternate" hreflang="es-SV"/);
+});
+
 test("natural history page stays specific and source-backed", () => {
   assert.match(naturalHistoryPage, /74 macroalgae species/i);
   assert.match(naturalHistoryPage, /13 intertidal echinoderm species/i);

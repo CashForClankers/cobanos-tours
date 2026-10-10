@@ -70,3 +70,27 @@ test("focused guides and spanish page are reachable", async ({ page }) => {
   await expect(page).toHaveURL(/es\/historia-natural\.html$/);
   await expect(page.getByRole("heading", { name: /Por qué Los Cóbanos se siente distinto/i })).toBeVisible();
 });
+
+test("tour actions align within rows and translated layouts remain usable", async ({ page }) => {
+  await page.goto("/");
+  for (const language of ["en", "es"]) {
+    await page.locator(`[data-set-lang="${language}"]`).click();
+    const layout = await page.locator(".tour-card").evaluateAll(cards => cards.map(card => {
+      const box = card.getBoundingClientRect();
+      const button = card.querySelector(".btn").getBoundingClientRect();
+      return { top: box.top, bottom: box.bottom, actionBottom: button.bottom, actionWidth: button.width, width: box.width };
+    }));
+    for (let i = 0; i < layout.length; i++) {
+      expect(layout[i].width).toBeGreaterThan(270);
+      expect(layout[i].actionWidth).toBeGreaterThan(layout[i].width * 0.7);
+      for (let j = i + 1; j < layout.length; j++) {
+        if (Math.abs(layout[i].top - layout[j].top) < 2) expect(Math.abs(layout[i].actionBottom - layout[j].actionBottom)).toBeLessThan(2);
+      }
+    }
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+    const coffee = page.locator(".gallery-item-context");
+    await coffee.scrollIntoViewIfNeeded();
+    await expect(coffee.locator("img")).toBeVisible();
+    expect(await coffee.evaluate(card => card.scrollHeight <= card.clientHeight + 1)).toBe(true);
+  }
+});

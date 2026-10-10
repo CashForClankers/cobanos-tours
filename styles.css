@@ -29,7 +29,7 @@
 
   --text-primary: #0d2818;
   --text-secondary: #2d5a3d;
-  --text-muted: #5a8a6a;
+  --text-muted: #477356;
   --white: #ffffff;
 
   --radius-sm: 8px;
@@ -460,7 +460,6 @@ body.lang-es [data-lang="es"] {
   background: var(--green-50);
 }
 
-.tours-grid,
 .edu-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -499,9 +498,8 @@ body.lang-es [data-lang="es"] {
 }
 
 .tour-tag {
-  position: absolute;
-  top: 20px;
-  right: 20px;
+  align-self: flex-start;
+  max-width: 100%;
   background: var(--green-500);
   color: var(--white);
   font-size: 0.7rem;
@@ -558,8 +556,10 @@ body.lang-es [data-lang="es"] {
 }
 .tour-price strong { color: var(--green-800); }
 .tour-card .btn {
-  align-self: flex-start;
-  margin-top: 4px;
+  align-self: stretch;
+  margin-top: auto;
+  min-height: 48px;
+  text-align: center;
 }
 
 .reef-section,
@@ -928,8 +928,9 @@ body.lang-es [data-lang="es"] {
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 220px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-rows: auto;
+  align-items: start;
   gap: 16px;
 }
 
@@ -1459,4 +1460,95 @@ body.lang-es [data-lang="es"] {
     font-size: 0.95rem;
     line-height: 1.58;
   }
+}
+
+/* October 2026: preserve the coastal identity while improving readable layouts. */
+.tours-grid,
+#local-records .edu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+.tour-card { min-width: 0; }
+.tour-card .btn { line-height: 1.4; }
+#local-records .edu-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+#local-records .edu-card h3 { margin-bottom: 0; }
+#local-records .edu-resource-link { margin-top: auto; text-align: center; }
+.nav-cta,
+.btn-primary,
+.tour-tag { background: var(--green-600); border-color: var(--green-600); }
+.nav-cta:hover,
+.btn-primary:hover,
+.btn-outline:hover,
+.edu-resource-link:hover { background: var(--green-700); border-color: var(--green-700); }
+section[id], h1[id], h2[id] { scroll-margin-top: 100px; }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {
+  outline: 3px solid var(--ocean-500);
+  outline-offset: 4px;
+}
+.nav a:focus-visible, .nav button:focus-visible, .hero a:focus-visible,
+.reef-section a:focus-visible, .victor-section a:focus-visible, .footer a:focus-visible {
+  outline-color: var(--green-300);
+}
+.gallery-item { display: flex; flex-direction: column; }
+.gallery-item img { height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
+.gallery-item-context img { aspect-ratio: 3 / 4; object-fit: contain; }
+.gallery-item img[src$="sign.jpg"] { aspect-ratio: 3 / 4; object-fit: contain; }
+.gallery-caption,
+.gallery-callout-copy {
+  position: static;
+  padding: 18px;
+  color: var(--green-900);
+  background: var(--green-50);
+}
+.gallery-item-featured::after, .gallery-item-callout::after { display: none; }
+.gallery-callout-copy strong, .gallery-callout-copy p { color: var(--green-900); }
+.gallery-item-callout .gallery-callout-photo { position: static; height: auto; }
+.guide-page .hero { min-height: 65svh; }
+.guide-page .hero-content { padding-bottom: 56px; }
+@media (hover: hover) {
+  .edu-card:hover { transform: none; box-shadow: var(--shadow-sm); }
+}
+@media (max-width: 980px) {
+  .nav-inner { flex-wrap: wrap; gap: 12px; }
+  .nav-links {
+    display: flex;
+    order: 3;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 4px 0;
+    gap: 20px;
+  }
+  .nav-links a { padding: 6px 0; }
+  section[id], h1[id], h2[id] { scroll-margin-top: 190px; }
+  .hero-content { padding-top: 190px; }
+}
+@media (max-width: 700px) {
+  .tours-grid, #local-records .edu-grid { grid-template-columns: 1fr; }
+  .tour-card { padding: 28px 24px; }
+  .tour-details { grid-template-columns: 1fr; }
+  .gallery-grid { grid-template-columns: 1fr; }
+  .section-header { margin-bottom: 36px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none; transition: none; }
+  .tour-card:hover, .edu-card:hover, .contact-card:hover,
+  .guide-card:hover, .btn-primary:hover { transform: none; }
+}
+.tour-card-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 40px; }
+.tour-card-head .tour-tag { align-self: center; text-align: center; }
+.nav { background: rgba(13, 40, 24, 0.96); }
+.nav-links { scrollbar-width: none; }
+.nav-links::-webkit-scrollbar { display: none; }
+@media (max-width: 768px) {
+  .nav-inner { gap: 8px; }
+  .nav-logo { font-size: 1rem; }
+  .nav-links { gap: 18px; padding: 0; }
+  .nav-links a { font-size: 0.85rem; }
 }

@@ -71,3 +71,14 @@ npm run serve:dist
 - Keep contact details, meeting-point coordinates, and booking links current.
 - Preserve the bilingual English and Spanish paths when editing navigation.
 - Keep factual claims traceable to files under `docs/`.
+
+## How production deploys
+
+Verified October 9, 2026 through the GitHub Pages API: production publishes from
+`main`, repository root (`/`), using GitHub Pages' branch publishing. Push checked
+HTML/CSS/assets to `origin/main`; GitHub runs its Pages build/deployment. The
+`Site Quality` workflow runs checks separately and does not gate branch publishing.
+`npm run build` creates `dist/` for local QA; `dist/` is not the configured Pages
+publishing source. Confirm the Pages workflow succeeds and check changed content
+at `https://los-cobanos.com/`. Cloudflare domain/DNS changes are unnecessary for
+ordinary content releases. Roll back content with a revert commit and push.

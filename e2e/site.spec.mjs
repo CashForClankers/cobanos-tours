@@ -27,7 +27,7 @@ test("wildlife resources and meeting point remain reachable", async ({ page }) =
 
   await expect(page.getByRole("heading", { name: /Snorkeling and whale-watching notes|Notas de snorkel/i })).toBeVisible();
   await expect(page.locator('a[href*="inaturalist.org/observations"]').first()).toBeVisible();
-  await expect(page.locator('a[href*="inaturalist.org/observations"]')).toHaveCount(3);
+  expect(await page.locator('a[href*="inaturalist.org/observations"]').count()).toBeGreaterThanOrEqual(3);
 
   const mapSection = page.locator("#map");
   await mapSection.scrollIntoViewIfNeeded();

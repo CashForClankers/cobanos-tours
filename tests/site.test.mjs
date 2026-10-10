@@ -184,3 +184,20 @@ test("indexnow is wired for non-Google search engines", () => {
   assert.match(packageJson, /submit:indexnow/);
   assert.match(promotionPlaybook, /IndexNow/i);
 });
+
+test("language alternates only identify real translated pages", () => {
+  for (const page of [snorkelingPage, whalesPage, reefGuidePage, dayTripPage, whatToDoPage]) {
+    assert.doesNotMatch(page, /hreflang="es(?:-SV)?" href="https:\/\/los-cobanos\.com\/es\/"/);
+  }
+  assert.match(html, /hreflang="es" href="https:\/\/los-cobanos\.com\/es\/"/);
+  assert.match(naturalHistoryPage, /hreflang="es" href="https:\/\/los-cobanos\.com\/es\/historia-natural\.html"/);
+});
+
+test("booking drafts match the activity and do not assert unconfirmed pricing", () => {
+  const draft = page => decodeURIComponent(page.match(/href="https:\/\/wa\.me\/50364441869\?text=([^"]+)"/)[1]);
+  assert.match(draft(snorkelingPage), /swimming experience.*total price.*included equipment/i);
+  assert.match(draft(whalesPage), /whale watching.*availability.*cancellation terms/i);
+  assert.match(draft(dayTripPage), /San Salvador.*meeting time/i);
+  assert.doesNotMatch(html, /\$75|"contactOption":\s*"TollFree"|Gear included\./);
+  assert.match(html, /Historical|dated community records/i);
+});

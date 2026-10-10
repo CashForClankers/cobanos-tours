@@ -187,3 +187,16 @@ Many of the strongest primary sources for Los Cóbanos are in Spanish. The Engli
 - Avoid hammerhead nursery claims until a primary Los Cóbanos source is in the source list.
 - Keep `Victor` prominent anywhere a visitor needs certainty: boat access, whale-license context, payment, meeting point, and day-of conditions.
 - Keep English primary, but make Spanish explicitly selectable and persistent.
+
+## Nearby community wildlife records — October 9, 2026
+
+Four public, unobscured research-grade iNaturalist observations reported within
+3 km of the existing meeting point were selected for both homepages. They are
+historical records, not promised encounters, tour routes or independent proof of
+current abundance. Links open the contributing observers' records and photos;
+no observation photographs are reproduced.
+
+- Jewel moray, *Muraena lentiginosa*, March 5, 2025: https://www.inaturalist.org/observations/266460894
+- Panamic cushion star, *Pentaceraster cumingi*, March 8, 2025: https://www.inaturalist.org/observations/266460892
+- Sally Lightfoot crab, *Grapsus grapsus*, January 15, 2022: https://www.inaturalist.org/observations/105102233
+- Green iguana, *Iguana iguana*, August 25, 2026: https://www.inaturalist.org/observations/394702465

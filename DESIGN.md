@@ -19,3 +19,11 @@ keeps section links available in a horizontally scrollable row.
 
 Verify English/Spanish, desktop/tablet/mobile, tour button alignment, portrait captions,
 anchor visibility and guide reading. Visual polish does not establish conversion gains.
+
+October 12 maker credit: after the existing footer, a sea-glass editorial card
+(#e5f1e8, ink #163e2a, secondary #375743, border #a5cfbb). Playfair 24–32px
+headline and 15px body; 30px padding, 28px gaps, 16px radius. An FRM/arrow
+rail and one underlined link distinguish the credit from Victor's booking controls.
+Three columns above 800px, two below, single column below 480px. English/Spanish
+copy follows the page language, including the existing homepage language switch.
+The one promotional credit link is nofollow with source labels; no new tracking JS.

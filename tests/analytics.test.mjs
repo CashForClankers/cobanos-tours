@@ -6,6 +6,7 @@ import test from 'node:test';
 const source = readFileSync(new URL('../analytics.js', import.meta.url), 'utf8');
 function browser({ saved = null, blocked = false, storageFails = false, hostname = 'los-cobanos.com' } = {}) {
   const tags = [], handlers = {}, cookies = [];
+  let inquiryHandler;
   const elements = [];
   const button = { focus() {} };
   const footer = { append() {} };
@@ -13,6 +14,7 @@ function browser({ saved = null, blocked = false, storageFails = false, hostname
     addEventListener: (name, fn) => { handlers[name] = fn; } };
   const settings = { addEventListener() {}, focus() {} };
   const document = {
+    addEventListener(name, fn) { if (name === 'click') inquiryHandler = fn; },
     documentElement: { lang: 'en' },
     currentScript: { dataset: { measurementId: 'G-TEST123456', hostnames: 'los-cobanos.com,www.los-cobanos.com' } },
     createElement: tag => tag === 'section' ? panel : tag === 'button' ? settings : {},
@@ -29,7 +31,11 @@ function browser({ saved = null, blocked = false, storageFails = false, hostname
     navigator: { globalPrivacyControl: blocked },
     localStorage: { getItem() { if (storageFails) throw Error('blocked'); return JSON.stringify(saved); }, setItem(_, value) { stored = value; } },
   });
-  return { tags, panel, cookies, window, get reloads() { return reloads; }, get stored() { return stored; },
+  return { tags, panel, cookies, window,
+    inquiry(method = 'whatsapp', href = 'https://wa.me/50364441869?text=PRIVATE', section = 'tours', options = {}) {
+      const link = { dataset: { bookingInquiry: method }, getAttribute: () => href, closest: name => name === 'section' ? { id: section } : null };
+      inquiryHandler({ target: { closest: () => link }, button: 0, ...options });
+    }, get reloads() { return reloads; }, get stored() { return stored; },
     choose(value) { handlers.click({ target: { closest: () => ({ dataset: { analytics: value } }) } }); } };
 }
 test('no request before consent; grant loads once with sanitized page/referrer and Ads denied', () => {
@@ -74,4 +80,24 @@ test('all public HTML pages include one client tag and no Google tag on verifica
     const count = (html.match(/data-measurement-id="G-VQEMFY0KZ9"/g) || []).length;
     assert.equal(count, html.includes('<body') && !file.endsWith('google-site-verification.html') ? 1 : 0, file);
   }
+});
+
+test('booking inquiry started is consent-gated, channel-specific and contains no message or phone', () => {
+  const b = browser(); b.inquiry(); assert.equal(b.window.dataLayer, undefined);
+  b.choose('granted'); b.inquiry(); b.inquiry(); b.inquiry('phone', 'tel:+50364441869', 'contact');
+  const events = b.window.dataLayer.map(args => Array.from(args)).filter(args => args[0] === 'event');
+  assert.equal(events.length, 2); assert(events.every(args => args[1] === 'booking_inquiry_started'));
+  assert.equal(events[0][2].contact_method, 'whatsapp'); assert.equal(events[1][2].contact_method, 'phone');
+  assert(!JSON.stringify(events).includes('PRIVATE')); assert(!JSON.stringify(events).includes('50364441869'));
+  b.choose('denied'); b.inquiry('phone', 'tel:+50364441869', 'victor');
+  assert.equal(b.window.dataLayer.filter(args => args[0] === 'event').length, 2);
+});
+test('wrong destinations, cancelled clicks, non-production hosts and GPC never become inquiries', () => {
+  const b = browser(); b.choose('granted');
+  b.inquiry('whatsapp', 'https://example.com/'); b.inquiry('other');
+  b.inquiry('phone', 'tel:+50364441869', 'contact', { defaultPrevented: true });
+  b.inquiry('phone', 'tel:+50364441869', 'contact', { button: 2 });
+  assert.equal(b.window.dataLayer.filter(args => args[0] === 'event').length, 0);
+  const local = browser({ hostname: 'localhost' }); local.choose('granted'); local.inquiry(); assert.equal(local.tags.length, 0);
+  const blocked = browser({ blocked: true }); blocked.choose('granted'); blocked.inquiry(); assert.equal(blocked.tags.length, 0);
 });

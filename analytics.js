@@ -69,6 +69,29 @@
     tag.src = 'https://www.googletagmanager.com/gtag/js?id=' + id;
     document.head.append(tag);
   }
+  // Opening WhatsApp or the phone app is inquiry intent, not a sent message or booking.
+  let lastInquiry = { key: '', time: -Infinity };
+  document.addEventListener('click', event => {
+    if (event.defaultPrevented || (event.button !== undefined && event.button !== 0)) return;
+    if (!started || blocked || choice !== 'granted' || !hosts.includes(location.hostname)) return;
+    const link = event.target.closest('a[data-booking-inquiry]');
+    if (!link) return;
+    const method = link.dataset.bookingInquiry;
+    const href = link.getAttribute('href') || '';
+    if (method === 'whatsapp' ? !/^https:\/\/wa\.me\/50364441869(?:[?#]|$)/.test(href)
+      : method === 'phone' ? href !== 'tel:+50364441869' : true) return;
+    const section = link.closest('section')?.id;
+    const placement = ['tours', 'victor', 'plan', 'contact', 'contacto', 'hero', 'itineraries'].includes(section)
+      ? section : link.closest('nav') ? 'navigation' : 'page';
+    const key = method + ':' + placement;
+    const now = Date.now();
+    if (lastInquiry.key === key && now - lastInquiry.time < 1000) return;
+    lastInquiry = { key, time: now };
+    window.gtag('event', 'booking_inquiry_started', {
+      send_to: id, contact_method: method, contact_placement: placement,
+      transport_type: 'beacon',
+    });
+  });
   function clearCookies() {
     for (const cookie of document.cookie.split(';')) {
       const name = cookie.trim().split('=')[0];

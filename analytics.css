@@ -1,0 +1,9 @@
+.analytics-choice { position: fixed; z-index: 10000; inset: auto 1rem 1rem; max-width: 42rem; margin-inline: auto; padding: 1rem; color: #17251e; background: #f7f6ef; border: 1px solid #536858; border-radius: .5rem; box-shadow: 0 .2rem 1rem #0003; font: 400 1rem/1.5 system-ui, sans-serif; }
+.analytics-choice[hidden] { display: none; }
+.analytics-choice p { margin: 0 0 .75rem; }
+.analytics-choice a { color: inherit; text-decoration: underline; }
+.analytics-choice div { display: flex; flex-wrap: wrap; gap: .75rem; }
+.analytics-choice button, .analytics-settings { padding: .6rem .8rem; border: 1px solid currentColor; border-radius: .25rem; background: transparent; color: inherit; font: inherit; cursor: pointer; }
+.analytics-choice button { flex: 1; min-height: 44px; }
+.analytics-settings { font-size: .875rem; margin: .75rem; }
+.analytics-choice button:focus-visible, .analytics-settings:focus-visible { outline: 3px solid #c45d32; outline-offset: 3px; }

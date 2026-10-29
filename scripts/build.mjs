@@ -6,6 +6,9 @@ const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..")
 const distDir = path.join(rootDir, "dist");
 
 const copyTargets = [
+  "analytics.js",
+  "analytics.css",
+  "privacy.html",
   "b1a7c6f0d2e94aee9c65e6f1a4bd38c7.txt",
   "CNAME",
   "es",
